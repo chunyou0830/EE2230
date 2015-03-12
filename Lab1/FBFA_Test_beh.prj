@@ -1,0 +1,5 @@
+verilog work "HalfAdder.v"
+verilog work "FullAdder.v"
+verilog work "FourBitFullAdder.v"
+verilog work "FBFA_Test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

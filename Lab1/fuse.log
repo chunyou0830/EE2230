@@ -1,0 +1,26 @@
+Running: C:\XilinxISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/XilinxISE/Project/Lab1/DA_Test_isim_beh.exe -prj C:/XilinxISE/Project/Lab1/DA_Test_beh.prj work.DA_Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/XilinxISE/Project/Lab1/HalfAdder.v" into library work
+Analyzing Verilog file "C:/XilinxISE/Project/Lab1/FullAdder.v" into library work
+Analyzing Verilog file "C:/XilinxISE/Project/Lab1/FourBitAdder.v" into library work
+Analyzing Verilog file "C:/XilinxISE/Project/Lab1/DecimalAdder.v" into library work
+Analyzing Verilog file "C:/XilinxISE/Project/Lab1/DA_Test.v" into library work
+Analyzing Verilog file "C:/XilinxISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/XilinxISE/Project/Lab1/DecimalAdder.v" Line 36: Port co is not connected to this instance
+Completed static elaboration
+Compiling module HalfAdder
+Compiling module FullAdder
+Compiling module FourBitAdder
+Compiling module DecimalAdder
+Compiling module DA_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable C:/XilinxISE/Project/Lab1/DA_Test_isim_beh.exe
+Fuse Memory Usage: 25960 KB
+Fuse CPU Usage: 390 ms
