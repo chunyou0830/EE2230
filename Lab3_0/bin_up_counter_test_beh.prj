@@ -1,0 +1,3 @@
+verilog work "bin_up_counter.v"
+verilog work "bin_up_counter_test.v"
+verilog work "C:/XilinxISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"
