@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-11T13:56:35</DateModified>
+  <DateModified>2015-03-17T15:14:02</DateModified>
   <ModuleName>FourBitFullAdder</ModuleName>
   <SummaryTimeStamp>2015-03-09T15:28:43</SummaryTimeStamp>
-  <SavedFilePath>C:/XilinxISE/Project/Lab1/iseconfig/FourBitFullAdder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/XilinxISE/Project/Lab1\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Programming/EE2230/Lab1/iseconfig/FourBitFullAdder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab1\</ImplementationReportsDirectory>
   <DateInitialized>2015-03-09T14:14:34</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

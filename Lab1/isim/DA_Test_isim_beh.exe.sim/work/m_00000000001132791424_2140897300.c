@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/XilinxISE/Project/Lab1/HalfAdder.v";
+static const char *ng0 = "D:/Programming/EE2230/Lab1/HalfAdder.v";
 
 
 

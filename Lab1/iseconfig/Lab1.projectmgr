@@ -30,13 +30,13 @@
          <ClosedNode>/FourBitFullAdder D:|Lab1|FourBitFullAdder.v/F3 - FullAdder</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Decoder (C:/XilinxISE/Project/Lab1/Decoder.v)</SelectedItem>
+         <SelectedItem>FourBitFullAdder (D:/Programming/EE2230/Lab1/FourBitFullAdder.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000122000000020000000000000000000000000200000064ffffffff000000810000000300000002000001220000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Decoder (C:/XilinxISE/Project/Lab1/Decoder.v)</CurrentItem>
+      <CurrentItem>FourBitFullAdder (D:/Programming/EE2230/Lab1/FourBitFullAdder.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -96,6 +96,7 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode></ClosedNode>
          <ClosedNode>/DA_Test C:|XilinxISE|Project|Lab1|DA_Test.v/uut - DecimalAdder</ClosedNode>
          <ClosedNode>/Decoder_Test D:|Lab1|Decoder_Test.v</ClosedNode>
          <ClosedNode>/FBA_Test C:|XilinxISE|Project|Lab1|FBA_Test.v</ClosedNode>
@@ -112,14 +113,12 @@
          <ClosedNode>/HalfAdder_Test C:|XilinxISE|Project|Lab1|HalfAdder_Test.v</ClosedNode>
          <ClosedNode>/HalfAdder_Test D:|Lab1|HalfAdder_Test.v</ClosedNode>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>uut - Decoder (C:/XilinxISE/Project/Lab1/Decoder.v)</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012a0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000093000000020000000000000000000000000200000064ffffffff000000810000000300000002000000930000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - Decoder (C:/XilinxISE/Project/Lab1/Decoder.v)</CurrentItem>
+      <CurrentItem>xc6slx16-3csg324</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -127,13 +126,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -149,5 +148,5 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>

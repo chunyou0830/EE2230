@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/XilinxISE/Project/Lab1/DecimalAdder.v" Line 36: Port <arg fmt="%s" index="1">co</arg> is not connected to this instance
-</msg>
-
 </messages>
 

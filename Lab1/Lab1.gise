@@ -22,9 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DA_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DA_Test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DA_Test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DecimalAdder.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DecimalAdder.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DecimalAdder.xst"/>
@@ -67,7 +65,9 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="FourBitFullAdder_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="FourBitFullAdder_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FourBitFullAdder_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullAdder_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FullAdder_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FullAdder_Test_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="HalfAdder_Test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -106,11 +106,11 @@
       <outfile xil_pn:name="HalfAdder.v"/>
       <outfile xil_pn:name="HalfAdder_Test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1425883742" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4946394437075705893" xil_pn:start_ts="1425883742">
+    <transform xil_pn:end_ts="1426251262" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-448551718495417783" xil_pn:start_ts="1426251262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1425883742" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8237846487655068263" xil_pn:start_ts="1425883742">
+    <transform xil_pn:end_ts="1426251262" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4271507165071535097" xil_pn:start_ts="1426251262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -134,27 +134,27 @@
       <outfile xil_pn:name="HalfAdder.v"/>
       <outfile xil_pn:name="HalfAdder_Test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1425893007" xil_pn:in_ck="-4620434189054483833" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6344367836253110581" xil_pn:start_ts="1425893000">
+    <transform xil_pn:end_ts="1426251265" xil_pn:in_ck="-4620434189054483833" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5648506821819990481" xil_pn:start_ts="1426251262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DA_Test_beh.prj"/>
-      <outfile xil_pn:name="DA_Test_isim_beh.exe"/>
+      <outfile xil_pn:name="FullAdder_Test_beh.prj"/>
+      <outfile xil_pn:name="FullAdder_Test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1425982103" xil_pn:in_ck="3898308201646717621" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6497287156928259032" xil_pn:start_ts="1425982103">
+    <transform xil_pn:end_ts="1426251265" xil_pn:in_ck="3898308201646717621" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7276691926533591468" xil_pn:start_ts="1426251265">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DA_Test_isim_beh.wdb"/>
+      <outfile xil_pn:name="FullAdder_Test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
