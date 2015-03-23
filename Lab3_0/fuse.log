@@ -12,8 +12,7 @@ Compiling module bin_up_counter
 Compiling module bin_up_counter_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
 Built simulation executable D:/Programming/EE2230/Lab3_0/bin_up_counter_test_isim_beh.exe
-Fuse Memory Usage: 25768 KB
-Fuse CPU Usage: 296 ms
+Fuse Memory Usage: 25828 KB
+Fuse CPU Usage: 312 ms
