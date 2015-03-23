@@ -1,0 +1,24 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "D_ssd[0]" LOC = U5;
+NET "D_ssd[1]" LOC = T7;
+NET "D_ssd[2]" LOC = R7;
+NET "D_ssd[3]" LOC = V7;
+NET "D_ssd[4]" LOC = V4;
+NET "D_ssd[5]" LOC = T4;
+NET "D_ssd[6]" LOC = T3;
+NET "D_ssd[7]" LOC = R5;
+NET "D_ssd[8]" LOC = N5;
+NET "D_ssd[9]" LOC = R3;
+NET "D_ssd[10]" LOC = U7;
+NET "D_ssd[11]" LOC = T5;
+NET "D_ssd[12]" LOC = V5;
+NET "D_ssd[13]" LOC = N4;
+NET "D_ssd[14]" LOC = P6;
+NET "d[0]" LOC = F2;
+NET "d[1]" LOC = F1;
+NET "d[2]" LOC = H6;
+NET "d[3]" LOC = H5;
+NET "freq" LOC = R10;
+NET "rst_n" LOC = T2;

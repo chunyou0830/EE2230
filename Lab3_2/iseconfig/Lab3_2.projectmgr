@@ -12,13 +12,13 @@
          <ClosedNode>/bin_up_counter_test D:|103061142|Lab3_2|bin_up_counter_test.v/uut - bin_up_counter</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CNT - bin_up_counter (D:/Coding/EE2230/Lab3_2/bin_up_counter.v)</SelectedItem>
+         <SelectedItem>CLK - freq_div (D:/Program/EE2230/Lab3_2/freq_div.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000013b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000013b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>CNT - bin_up_counter (D:/Coding/EE2230/Lab3_2/bin_up_counter.v)</CurrentItem>
+      <CurrentItem>CLK - freq_div (D:/Program/EE2230/Lab3_2/freq_div.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
