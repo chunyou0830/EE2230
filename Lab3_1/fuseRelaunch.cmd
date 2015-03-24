@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/103061142/Lab3_1/freq_div_test_isim_beh.exe" -prj "D:/103061142/Lab3_1/freq_div_test_beh.prj" "work.freq_div_test" "work.glbl" 
