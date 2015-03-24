@@ -25,9 +25,10 @@ rst_n
     );
 //Defs
 	 input rst_n;
+	 wire clk_out;
 	 //Displays
-	 wire [14:0] bcd_u;
-	 wire [14:0] bcd_t;
+	 wire [14:0] fsd_u;
+	 wire [14:0] fsd_t;
 	 output reg [18:0] display;
 	 //Clocks
 	 input oscillator;
@@ -37,16 +38,16 @@ rst_n
 	 
 //Module Connection
 	freq_div divider(.clk_cnt(clk_cnt),.clk_scn(clk_scn),.clk(oscillator),.rst_n(rst_n));
-	bcd_counter bcd_0(.fsd(bcd_u),.clk(clk_cnt),.clk_add(clk_add),.rst_n(rst_n));
-	bcd_counter bcd_1(.fsd(bcd_t),.clk(clk_add),.rst_n(rst_n));
+	counter fsd_0(.fsd(fsd_u),.clk(clk_cnt),.clk_add(clk_add),.rst_n(rst_n));
+	counter fsd_1(.fsd(fsd_t),.clk(clk_add),.rst_n(rst_n));
 
-//Decode
+//Display
 always @*
 	case(clk_scn)
-		2'b00: display={4'b1110,bcd_u};
-		2'b01: display={4'b1101,bcd_t};
-		2'b10: display={4'b1110,bcd_u};
-		2'b11: display={4'b1101,bcd_t};
+		2'b00: display={4'b1110,fsd_u};
+		2'b01: display={4'b1101,fsd_t};
+		2'b10: display={4'b1110,fsd_u};
+		2'b11: display={4'b1101,fsd_t};
 	endcase
 
 endmodule

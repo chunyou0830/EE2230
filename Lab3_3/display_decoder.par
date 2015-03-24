@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CY-PC::  Tue Mar 24 16:37:44 2015
+CY-PC::  Tue Mar 24 17:13:50 2015
 
 par -w -intstyle ise -ol high -mt off display_decoder_map.ncd
 display_decoder.ncd display_decoder.pcf 
@@ -147,7 +147,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net div | SETUP       |         N/A|     1.410ns|     N/A|           0
   ider/clk_cnt                              | HOLD        |     0.477ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net bcd | SETUP       |         N/A|     1.307ns|     N/A|           0
+  Autotimespec constraint for clock net fsd | SETUP       |         N/A|     1.307ns|     N/A|           0
   _0/clk_add                                | HOLD        |     0.485ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 

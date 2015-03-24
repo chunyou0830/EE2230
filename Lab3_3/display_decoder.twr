@@ -45,10 +45,10 @@ Clock oscillator to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-display<2>  |         8.738(R)|      SLOW  |         4.668(R)|      FAST  |oscillator_BUFGP  |   0.000|
-display<5>  |         8.921(R)|      SLOW  |         4.848(R)|      FAST  |oscillator_BUFGP  |   0.000|
-display<7>  |         8.571(R)|      SLOW  |         4.560(R)|      FAST  |oscillator_BUFGP  |   0.000|
-display<8>  |         9.286(R)|      SLOW  |         5.041(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<2>  |         8.794(R)|      SLOW  |         4.686(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<5>  |         9.454(R)|      SLOW  |         5.159(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<7>  |         8.397(R)|      SLOW  |         4.431(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<8>  |         8.810(R)|      SLOW  |         4.747(R)|      FAST  |oscillator_BUFGP  |   0.000|
 display<9>  |         8.799(R)|      SLOW  |         4.687(R)|      FAST  |oscillator_BUFGP  |   0.000|
 display<10> |         9.187(R)|      SLOW  |         4.936(R)|      FAST  |oscillator_BUFGP  |   0.000|
 display<11> |        10.100(R)|      SLOW  |         4.456(R)|      FAST  |oscillator_BUFGP  |   0.000|
@@ -68,7 +68,7 @@ oscillator     |    1.852|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Mar 24 16:37:52 2015 
+Analysis completed Tue Mar 24 17:13:58 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

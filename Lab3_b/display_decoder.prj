@@ -1,0 +1,4 @@
+verilog work "SSD_Decoder.v"
+verilog work "freq_div.v"
+verilog work "bcd_counter.v"
+verilog work "display_decoder.v"

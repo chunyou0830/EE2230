@@ -18,9 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module bcd_counter(
+module counter(
 	 fsd,
-	 //bcd,
 	 clk,
 	 clk_add,
 	 rst_n
@@ -44,7 +43,6 @@ always @(posedge clk or negedge rst_n)
 			clk_add<=0;
 		end
 
-//always @*
 SSD_Decoder decode(.D_ssd(fsd),.i(bcd));
 
 endmodule

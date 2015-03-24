@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_b/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_b/display_decoder.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_b/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_b/display_decoder.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_b/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_b/display_decoder.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_b/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_b/display_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc display_decoder.ucf -p xc6slx16-csg324-3 display_decoder.ngc display_decoder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd display_decoder.pcf 
+par -w -intstyle ise -ol high -mt off display_decoder_map.ncd display_decoder.ncd display_decoder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_decoder.twx display_decoder.ncd -o display_decoder.twr display_decoder.pcf -ucf display_decoder.ucf 
+bitgen -intstyle ise -f display_decoder.ut display_decoder.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_b/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_b/display_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc display_decoder.ucf -p xc6slx16-csg324-3 display_decoder.ngc display_decoder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd display_decoder.pcf 
+par -w -intstyle ise -ol high -mt off display_decoder_map.ncd display_decoder.ncd display_decoder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_decoder.twx display_decoder.ncd -o display_decoder.twr display_decoder.pcf -ucf display_decoder.ucf 
+bitgen -intstyle ise -f display_decoder.ut display_decoder.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_b/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_b/display_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc display_decoder.ucf -p xc6slx16-csg324-3 display_decoder.ngc display_decoder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd display_decoder.pcf 
+par -w -intstyle ise -ol high -mt off display_decoder_map.ncd display_decoder.ncd display_decoder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml display_decoder.twx display_decoder.ncd -o display_decoder.twr display_decoder.pcf -ucf display_decoder.ucf 
+bitgen -intstyle ise -f display_decoder.ut display_decoder.ncd 
