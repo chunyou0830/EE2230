@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_3/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_3/display_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 display_decoder.ngc display_decoder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd display_decoder.pcf 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_3/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_3/display_decoder.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_3/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_3/display_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 display_decoder.ngc display_decoder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd display_decoder.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd display_decoder.pcf 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab3_3/display_decoder.xst" -ofn "D:/Programming/EE2230/Lab3_3/display_decoder.syr" 

@@ -1,0 +1,22 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'display_decoder'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o display_decoder_map.ncd display_decoder.ngd
+display_decoder.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Mar 24 14:12:51 2015
+
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

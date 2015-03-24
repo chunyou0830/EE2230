@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Programming\EE2230\Lab3_3\display_decoder.v" Line 44: Port <arg fmt="%s" index="1">clk_add</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%d" index="2">42</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">display_decoder</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%d" index="2">43</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">bcd_U</arg>&gt; of block &lt;<arg fmt="%s" index="4">bcd_counter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">display_decoder</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%d" index="2">44</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">bcd_T</arg>&gt; of block &lt;<arg fmt="%s" index="4">bcd_counter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">display_decoder</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">bcd_u</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">bcd_t</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_scn</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">clk_scn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">bcd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_U</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">bcd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_T</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">clk_add</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_T</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+</messages>
+

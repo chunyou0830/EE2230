@@ -1,0 +1,3 @@
+verilog work "freqdiv24.v"
+verilog work "bcd_counter_u.v"
+verilog work "display_decoder.v"
