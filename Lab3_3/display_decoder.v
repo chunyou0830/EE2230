@@ -19,24 +19,19 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module display_decoder(
-bcd_u,
-bcd_t,
 display,
 oscillator,
-clk_scn,
-//clk_cnt,
-//clk_add,
 rst_n
     );
 //Defs
 	 input rst_n;
 	 //Displays
-	 input wire [14:0] bcd_u;
-	 input wire [14:0] bcd_t;
+	 wire [14:0] bcd_u;
+	 wire [14:0] bcd_t;
 	 output reg [18:0] display;
 	 //Clocks
 	 input oscillator;
-	 input [1:0] clk_scn;
+	 wire [1:0] clk_scn;
 	 wire clk_cnt;
 	 wire clk_add;
 	 

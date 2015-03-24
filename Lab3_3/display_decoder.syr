@@ -117,7 +117,7 @@ Parsing module <display_decoder>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\Programming\EE2230\Lab3_3\display_decoder.v" Line 46: Port clk_add is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\Programming\EE2230\Lab3_3\display_decoder.v" Line 41: Port clk_add is not connected to this instance
 
 Elaborating module <display_decoder>.
 
@@ -133,7 +133,7 @@ Elaborating module <SSD_Decoder>.
 
 Synthesizing Unit <display_decoder>.
     Related source file is "D:\Programming\EE2230\Lab3_3\display_decoder.v".
-INFO:Xst:3210 - "D:\Programming\EE2230\Lab3_3\display_decoder.v" line 46: Output port <clk_add> of the instance <bcd_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Programming\EE2230\Lab3_3\display_decoder.v" line 41: Output port <clk_add> of the instance <bcd_1> is unconnected or connected to loadless signal.
     Summary:
 	inferred   3 Multiplexer(s).
 Unit <display_decoder> synthesized.
@@ -238,176 +238,375 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <bcd_1/clk_add> of sequential type is unconnected in block <display_decoder>.
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<14>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<14>>
-   Output port doA<14> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Optimizing unit <display_decoder> ...
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<13>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<13>>
-   Output port doA<13> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Optimizing unit <freq_div> ...
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<12>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<12>>
-   Output port doA<12> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block display_decoder, actual ratio is 0.
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<11>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<11>>
-   Output port doA<11> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Final Macro Processing ...
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<10>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<10>>
-   Output port doA<10> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+=========================================================================
+Final Register Report
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<9>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<9>>
-   Output port doA<9> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<8>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<8>>
-   Output port doA<8> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+=========================================================================
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<7>>
-   Output port doA<7> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<6>>
-   Output port doA<6> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Partition Implementation Status
+-------------------------------
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<5>>
-   Output port doA<5> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+  No Partitions were found in this design.
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<4>>
-   Output port doA<4> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+-------------------------------
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<3>>
-   Output port doA<3> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<2>>
-   Output port doA<2> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Top Level Output File Name         : display_decoder.ngc
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<1>>
-   Output port doA<1> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 107
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 24
+#      LUT3                        : 4
+#      LUT4                        : 12
+#      LUT5                        : 5
+#      LUT6                        : 6
+#      MUXCY                       : 24
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 34
+#      FDC                         : 33
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 1
+#      OBUF                        : 19
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_u<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_u<0>>
-   Output port doA<0> of instance <bcd_0/decode/Mram_D_ssd> of inferred macro RAM
+Device utilization summary:
+---------------------------
 
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<14>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<14>>
-   Output port doA<14> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<13>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<13>>
-   Output port doA<13> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<12>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<12>>
-   Output port doA<12> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<11>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<11>>
-   Output port doA<11> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<10>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<10>>
-   Output port doA<10> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<9>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<9>>
-   Output port doA<9> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<8>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<8>>
-   Output port doA<8> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<7>>
-   Output port doA<7> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<6>>
-   Output port doA<6> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<5>>
-   Output port doA<5> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<4>>
-   Output port doA<4> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<3>>
-   Output port doA<3> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<2>>
-   Output port doA<2> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<1>>
-   Output port doA<1> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <bcd_t<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <bcd_t<0>>
-   Output port doA<0> of instance <bcd_1/decode/Mram_D_ssd> of inferred macro RAM
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <clk_scn<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <clk_scn<1>>
-   Output signal of FDC instance <divider/clk_scn_1>
-
-ERROR:Xst:528 - Multi-source in Unit <display_decoder> on signal <clk_scn<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Primary input port <clk_scn<0>>
-   Output signal of FDC instance <divider/clk_scn_0>
+Selected Device : 6slx16csg324-3 
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.15 secs
+Slice Logic Utilization: 
+ Number of Slice Registers:              34  out of  18224     0%  
+ Number of Slice LUTs:                   54  out of   9112     0%  
+    Number used as Logic:                54  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     54
+   Number with an unused Flip Flop:      20  out of     54    37%  
+   Number with an unused LUT:             0  out of     54     0%  
+   Number of fully used LUT-FF pairs:    34  out of     54    62%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+divider/clk_cnt                    | NONE(bcd_0/clk_add)    | 5     |
+bcd_0/clk_add                      | NONE(bcd_1/bcd_0)      | 4     |
+oscillator                         | BUFGP                  | 25    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.191ns (Maximum Frequency: 456.319MHz)
+   Minimum input arrival time before clock: 3.780ns
+   Maximum output required time after clock: 6.135ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divider/clk_cnt'
+  Clock period: 1.957ns (frequency: 510.960MHz)
+  Total number of paths / destination ports: 19 / 5
+-------------------------------------------------------------------------
+Delay:               1.957ns (Levels of Logic = 1)
+  Source:            bcd_0/bcd_3 (FF)
+  Destination:       bcd_0/clk_add (FF)
+  Source Clock:      divider/clk_cnt rising
+  Destination Clock: divider/clk_cnt rising
+
+  Data Path: bcd_0/bcd_3 to bcd_0/clk_add
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.447   1.205  bcd_0/bcd_3 (bcd_0/bcd_3)
+     LUT4:I0->O            1   0.203   0.000  bcd_0/Mcount_bcd_xor<2>11 (bcd_0/Mcount_bcd2)
+     FDC:D                     0.102          bcd_0/bcd_2
+    ----------------------------------------
+    Total                      1.957ns (0.752ns logic, 1.205ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bcd_0/clk_add'
+  Clock period: 1.908ns (frequency: 524.164MHz)
+  Total number of paths / destination ports: 15 / 4
+-------------------------------------------------------------------------
+Delay:               1.908ns (Levels of Logic = 1)
+  Source:            bcd_1/bcd_0 (FF)
+  Destination:       bcd_1/bcd_0 (FF)
+  Source Clock:      bcd_0/clk_add rising
+  Destination Clock: bcd_0/clk_add rising
+
+  Data Path: bcd_1/bcd_0 to bcd_1/bcd_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   1.156  bcd_1/bcd_0 (bcd_1/bcd_0)
+     LUT4:I0->O            1   0.203   0.000  bcd_1/Mcount_bcd_xor<0>11 (bcd_1/Mcount_bcd)
+     FDC:D                     0.102          bcd_1/bcd_0
+    ----------------------------------------
+    Total                      1.908ns (0.752ns logic, 1.156ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'oscillator'
+  Clock period: 2.191ns (frequency: 456.319MHz)
+  Total number of paths / destination ports: 325 / 25
+-------------------------------------------------------------------------
+Delay:               2.191ns (Levels of Logic = 11)
+  Source:            divider/clk_scn_0 (FF)
+  Destination:       divider/clk_cnt (FF)
+  Source Clock:      oscillator rising
+  Destination Clock: oscillator rising
+
+  Data Path: divider/clk_scn_0 to divider/clk_cnt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.447   0.933  divider/clk_scn_0 (divider/clk_scn_0)
+     LUT1:I0->O            1   0.205   0.000  divider/Madd_cnt_tmp_cy<15>_rt (divider/Madd_cnt_tmp_cy<15>_rt)
+     MUXCY:S->O            1   0.172   0.000  divider/Madd_cnt_tmp_cy<15> (divider/Madd_cnt_tmp_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<16> (divider/Madd_cnt_tmp_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<17> (divider/Madd_cnt_tmp_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<18> (divider/Madd_cnt_tmp_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<19> (divider/Madd_cnt_tmp_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<20> (divider/Madd_cnt_tmp_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<21> (divider/Madd_cnt_tmp_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  divider/Madd_cnt_tmp_cy<22> (divider/Madd_cnt_tmp_cy<22>)
+     MUXCY:CI->O           0   0.019   0.000  divider/Madd_cnt_tmp_cy<23> (divider/Madd_cnt_tmp_cy<23>)
+     XORCY:CI->O           1   0.180   0.000  divider/Madd_cnt_tmp_xor<24> (divider/cnt_tmp<24>)
+     FDC:D                     0.102          divider/clk_cnt
+    ----------------------------------------
+    Total                      2.191ns (1.258ns logic, 0.933ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'divider/clk_cnt'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.780ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       bcd_0/bcd_0 (FF)
+  Destination Clock: divider/clk_cnt rising
+
+  Data Path: rst_n to bcd_0/bcd_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             33   0.206   1.305  rst_n_inv1_INV_0 (divider/rst_n_inv)
+     FDC:CLR                   0.430          bcd_0/bcd_0
+    ----------------------------------------
+    Total                      3.780ns (1.858ns logic, 1.922ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'bcd_0/clk_add'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.780ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       bcd_1/bcd_0 (FF)
+  Destination Clock: bcd_0/clk_add rising
+
+  Data Path: rst_n to bcd_1/bcd_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             33   0.206   1.305  rst_n_inv1_INV_0 (divider/rst_n_inv)
+     FDC:CLR                   0.430          bcd_1/bcd_0
+    ----------------------------------------
+    Total                      3.780ns (1.858ns logic, 1.922ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'oscillator'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.780ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       divider/clk_scn_1 (FF)
+  Destination Clock: oscillator rising
+
+  Data Path: rst_n to divider/clk_scn_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             33   0.206   1.305  rst_n_inv1_INV_0 (divider/rst_n_inv)
+     FDC:CLR                   0.430          divider/cnt_l_0
+    ----------------------------------------
+    Total                      3.780ns (1.858ns logic, 1.922ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'oscillator'
+  Total number of paths / destination ports: 17 / 12
+-------------------------------------------------------------------------
+Offset:              5.882ns (Levels of Logic = 3)
+  Source:            divider/clk_scn_0 (FF)
+  Destination:       display<14> (PAD)
+  Source Clock:      oscillator rising
+
+  Data Path: divider/clk_scn_0 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.447   0.933  divider/clk_scn_0 (divider/clk_scn_0)
+     LUT3:I2->O            1   0.205   0.944  Mmux_display111 (Mmux_display11)
+     LUT6:I0->O            1   0.203   0.579  Mmux_display51 (display_14_OBUF)
+     OBUF:I->O                 2.571          display_14_OBUF (display<14>)
+    ----------------------------------------
+    Total                      5.882ns (3.426ns logic, 2.456ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/clk_cnt'
+  Total number of paths / destination ports: 56 / 10
+-------------------------------------------------------------------------
+Offset:              6.135ns (Levels of Logic = 3)
+  Source:            bcd_0/bcd_1 (FF)
+  Destination:       display<14> (PAD)
+  Source Clock:      divider/clk_cnt rising
+
+  Data Path: bcd_0/bcd_1 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.447   1.186  bcd_0/bcd_1 (bcd_0/bcd_1)
+     LUT3:I0->O            1   0.205   0.944  Mmux_display111 (Mmux_display11)
+     LUT6:I0->O            1   0.203   0.579  Mmux_display51 (display_14_OBUF)
+     OBUF:I->O                 2.571          display_14_OBUF (display<14>)
+    ----------------------------------------
+    Total                      6.135ns (3.426ns logic, 2.709ns route)
+                                       (55.8% logic, 44.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd_0/clk_add'
+  Total number of paths / destination ports: 40 / 10
+-------------------------------------------------------------------------
+Offset:              5.951ns (Levels of Logic = 3)
+  Source:            bcd_1/bcd_1 (FF)
+  Destination:       display<14> (PAD)
+  Source Clock:      bcd_0/clk_add rising
+
+  Data Path: bcd_1/bcd_1 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   1.137  bcd_1/bcd_1 (bcd_1/bcd_1)
+     LUT3:I0->O            1   0.205   0.808  Mmux_display131 (Mmux_display13)
+     LUT6:I3->O            1   0.205   0.579  Mmux_display51 (display_14_OBUF)
+     OBUF:I->O                 2.571          display_14_OBUF (display<14>)
+    ----------------------------------------
+    Total                      5.951ns (3.428ns logic, 2.524ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock bcd_0/clk_add
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bcd_0/clk_add  |    1.908|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock divider/clk_cnt
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+divider/clk_cnt|    1.957|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock oscillator
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+oscillator     |    2.191|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.64 secs
  
 --> 
 
 Total memory usage is 223304 kilobytes
 
-Number of errors   :   32 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 
