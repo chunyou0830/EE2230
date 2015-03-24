@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml SSD_Decoder.twx SSD_Decoder.ncd -o SSD_Decoder.twr
+SSD_Decoder.pcf -ucf SSD_Decoder.ucf
+
+Design file:              SSD_Decoder.ncd
+Physical constraint file: SSD_Decoder.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+i<0>           |D_ssd<2>       |    7.128|
+i<0>           |D_ssd<5>       |    7.066|
+i<0>           |D_ssd<7>       |    7.154|
+i<0>           |D_ssd<8>       |    6.922|
+i<0>           |D_ssd<9>       |    6.959|
+i<0>           |D_ssd<10>      |    7.363|
+i<0>           |D_ssd<11>      |    7.328|
+i<0>           |D_ssd<12>      |    7.041|
+i<0>           |D_ssd<13>      |    6.636|
+i<0>           |D_ssd<14>      |    6.789|
+i<0>           |d<0>           |    7.125|
+i<1>           |D_ssd<2>       |    7.487|
+i<1>           |D_ssd<5>       |    7.425|
+i<1>           |D_ssd<7>       |    7.513|
+i<1>           |D_ssd<8>       |    7.281|
+i<1>           |D_ssd<9>       |    7.225|
+i<1>           |D_ssd<10>      |    8.211|
+i<1>           |D_ssd<11>      |    7.967|
+i<1>           |D_ssd<12>      |    7.680|
+i<1>           |D_ssd<13>      |    7.484|
+i<1>           |D_ssd<14>      |    7.055|
+i<1>           |d<1>           |    7.053|
+i<2>           |D_ssd<2>       |    7.220|
+i<2>           |D_ssd<5>       |    7.158|
+i<2>           |D_ssd<7>       |    7.246|
+i<2>           |D_ssd<8>       |    7.014|
+i<2>           |D_ssd<9>       |    7.278|
+i<2>           |D_ssd<10>      |    7.630|
+i<2>           |D_ssd<11>      |    7.378|
+i<2>           |D_ssd<12>      |    7.091|
+i<2>           |D_ssd<13>      |    6.903|
+i<2>           |D_ssd<14>      |    7.108|
+i<2>           |d<2>           |    7.706|
+i<3>           |D_ssd<2>       |    7.770|
+i<3>           |D_ssd<5>       |    7.708|
+i<3>           |D_ssd<7>       |    7.796|
+i<3>           |D_ssd<8>       |    7.564|
+i<3>           |D_ssd<9>       |    7.565|
+i<3>           |D_ssd<10>      |    8.167|
+i<3>           |D_ssd<11>      |    7.630|
+i<3>           |D_ssd<12>      |    7.343|
+i<3>           |D_ssd<13>      |    7.440|
+i<3>           |D_ssd<14>      |    7.395|
+i<3>           |d<3>           |    7.537|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Mar 12 18:48:51 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 214 MB
+
+
+
