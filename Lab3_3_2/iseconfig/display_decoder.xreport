@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-24T14:04:29</DateModified>
+  <DateModified>2015-03-24T15:59:11</DateModified>
   <ModuleName>display_decoder</ModuleName>
-  <SummaryTimeStamp>2015-03-24T14:04:29</SummaryTimeStamp>
-  <SavedFilePath>D:/Programming/EE2230/Lab3_3/iseconfig/freqdiv24.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab3_3\</ImplementationReportsDirectory>
-  <DateInitialized>2015-03-24T13:57:30</DateInitialized>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>D:/Programming/EE2230/Lab3_3_2/iseconfig/display_decoder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab3_3_2</ImplementationReportsDirectory>
+  <DateInitialized>2015-03-24T15:59:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

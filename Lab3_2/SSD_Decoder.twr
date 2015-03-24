@@ -2,8 +2,8 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml SSD_Decoder.twx SSD_Decoder.ncd -o SSD_Decoder.twr
+C:\XilinxISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s
+3 -n 3 -fastpaths -xml SSD_Decoder.twx SSD_Decoder.ncd -o SSD_Decoder.twr
 SSD_Decoder.pcf -ucf SSD_Decoder.ucf
 
 Design file:              SSD_Decoder.ncd
@@ -49,14 +49,14 @@ freq           |    1.854|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Mar 21 21:19:12 2015 
+Analysis completed Tue Mar 24 16:02:35 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 236 MB
+Peak Memory Usage: 239 MB
 
 
 

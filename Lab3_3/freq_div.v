@@ -38,7 +38,7 @@ reg [6:0] cnt_h; // temperatory buffer
 reg [`FREQ_DIV_BIT-1:0] cnt_tmp; // input node to flip flops
 
 // Combinational block 
-always @(clk_cnt or cnt_h or cnt_l or clk_scn)
+always @*
   cnt_tmp = {clk_cnt,cnt_h,clk_scn,cnt_l} + 1'b1;
   
 // Sequential block 

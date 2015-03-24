@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: SSD_Decoder.prj
 
@@ -105,11 +105,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\103061142\Lab3_2\freq_div.v" into library work
+Analyzing Verilog file "D:\Programming\EE2230\Lab3_2\freq_div.v" into library work
 Parsing module <freq_div>.
-Analyzing Verilog file "D:\103061142\Lab3_2\bin_up_counter.v" into library work
+Analyzing Verilog file "D:\Programming\EE2230\Lab3_2\bin_up_counter.v" into library work
 Parsing module <bin_up_counter>.
-Analyzing Verilog file "D:\103061142\Lab3_2\SSD_Decoder.v" into library work
+Analyzing Verilog file "D:\Programming\EE2230\Lab3_2\SSD_Decoder.v" into library work
 Parsing module <SSD_Decoder>.
 
 =========================================================================
@@ -127,14 +127,14 @@ Elaborating module <freq_div>.
 =========================================================================
 
 Synthesizing Unit <SSD_Decoder>.
-    Related source file is "D:\103061142\Lab3_2\SSD_Decoder.v".
+    Related source file is "D:\Programming\EE2230\Lab3_2\SSD_Decoder.v".
     Found 16x15-bit Read Only RAM for signal <D_ssd>
     Summary:
 	inferred   1 RAM(s).
 Unit <SSD_Decoder> synthesized.
 
 Synthesizing Unit <bin_up_counter>.
-    Related source file is "D:\103061142\Lab3_2\bin_up_counter.v".
+    Related source file is "D:\Programming\EE2230\Lab3_2\bin_up_counter.v".
     Found 4-bit register for signal <bcd>.
     Found 4-bit adder for signal <bcd[3]_GND_2_o_add_1_OUT> created at line 40.
     Found 4-bit comparator lessequal for signal <n0001> created at line 39
@@ -146,7 +146,7 @@ Synthesizing Unit <bin_up_counter>.
 Unit <bin_up_counter> synthesized.
 
 Synthesizing Unit <freq_div>.
-    Related source file is "D:\103061142\Lab3_2\freq_div.v".
+    Related source file is "D:\Programming\EE2230\Lab3_2\freq_div.v".
     Found 24-bit register for signal <cnt>.
     Found 1-bit register for signal <clk_out>.
     Found 25-bit adder for signal <cnt_tmp> created at line 35.
@@ -496,11 +496,11 @@ freq           |    2.123|         |         |         |
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.92 secs
+Total CPU time to Xst completion: 4.57 secs
  
 --> 
 
-Total memory usage is 255172 kilobytes
+Total memory usage is 223304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

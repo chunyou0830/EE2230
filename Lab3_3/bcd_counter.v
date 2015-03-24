@@ -19,13 +19,15 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_counter(
-	 bcd,
+	 fsd,
+	 //bcd,
 	 clk,
 	 clk_add,
 	 rst_n
     );
 	 output reg clk_add;
-	 output reg [3:0] bcd;
+	 output [14:0]fsd;
+	 reg [3:0] bcd;
 	 input wire clk;
 	 input rst_n;
 
@@ -42,5 +44,7 @@ always @(posedge clk or negedge rst_n)
 			clk_add<=0;
 		end
 
+//always @*
+SSD_Decoder decode(.D_ssd(fsd),.i(bcd));
 
 endmodule

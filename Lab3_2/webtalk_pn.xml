@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Mar 21 21:18:46 2015">
+<application name="pn" timeStamp="Tue Mar 24 16:02:26 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B90F0B2FAA9E4E63B21F437D1FE9643D" type="project"/>
-<property name="ProjectIteration" value="6" type="project"/>
-<property name="ProjectFile" value="D:/Coding/EE2230/Lab3_2/Lab3_2.xise" type="project"/>
+<property name="ProjectIteration" value="8" type="project"/>
+<property name="ProjectFile" value="D:/Programming/EE2230/Lab3_2/Lab3_2.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2015-03-19T18:03:06" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2015-03-19T18:03:06" type="design"/>
 <property name="PROP_intWbtProjectID" value="B90F0B2FAA9E4E63B21F437D1FE9643D" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="6" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="8" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lastSelectedUcfFile" value="D:/103061142/Lab3_2/SSD_Decoder.ucf" type="process"/>

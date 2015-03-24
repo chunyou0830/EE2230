@@ -20,22 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 module SSD_Decoder(
 		 D_ssd,
-		 d,
-		 freq,
-		 rst_n
+		 i
 );
 
-	output [14:0]D_ssd;
-	output [3:0]d;
-	input freq;
-	input rst_n;
-	
-	reg [14:0]D_ssd;
-	wire [3:0]i;
-
-bin_up_counter CNT(.bcd(i),.orig_clk(freq),.rst_n(rst_n));
-
-assign d=i;
+	output reg [14:0]D_ssd;
+	input [3:0]i;
 
 always @*
 	case(i)

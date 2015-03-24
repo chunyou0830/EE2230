@@ -5,37 +5,109 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Programming\EE2230\Lab3_3\display_decoder.v" Line 44: Port <arg fmt="%s" index="1">clk_add</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Programming\EE2230\Lab3_3\display_decoder.v" Line 46: Port <arg fmt="%s" index="1">clk_add</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%d" index="2">42</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">divider</arg>&gt; of block &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">display_decoder</arg>&gt;. Underlying logic will be removed.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">46</arg>: Output port &lt;<arg fmt="%s" index="3">clk_add</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%d" index="2">43</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">bcd_U</arg>&gt; of block &lt;<arg fmt="%s" index="4">bcd_counter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">display_decoder</arg>&gt;. Underlying logic will be removed.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_D_ssd</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%d" index="2">44</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">bcd_T</arg>&gt; of block &lt;<arg fmt="%s" index="4">bcd_counter</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">display_decoder</arg>&gt;. Underlying logic will be removed.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;14&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">bcd_u</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;13&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">bcd_t</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;12&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_scn</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;11&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">clk_scn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;10&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">bcd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_U</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;9&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">bcd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_T</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;8&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab3_3\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">clk_add</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_T</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;7&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;6&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;5&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_u&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;14&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;13&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;12&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;11&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;10&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;9&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;8&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;7&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;6&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;5&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">bcd_t&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">clk_scn&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">display_decoder</arg>&gt; on signal &lt;<arg fmt="%s" index="2">clk_scn&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
 </messages>
