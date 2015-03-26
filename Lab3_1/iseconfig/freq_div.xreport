@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-19T17:54:30</DateModified>
+  <DateModified>2015-03-26T16:20:03</DateModified>
   <ModuleName>freq_div</ModuleName>
   <SummaryTimeStamp>2015-03-19T17:27:57</SummaryTimeStamp>
-  <SavedFilePath>D:/103061142/Lab3_1/iseconfig/freq_div.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/103061142/Lab3_1\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Programming/EE2230/Lab3_1/iseconfig/freq_div.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab3_1\</ImplementationReportsDirectory>
   <DateInitialized>2015-03-19T17:23:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
