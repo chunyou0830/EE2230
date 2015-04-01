@@ -25,7 +25,7 @@ module dff(
     );
 	 input d;
 	 input clk;
-	 output q;
+	 output reg q;
 	 
 	 always @(posedge clk)
 		if(clk==1)

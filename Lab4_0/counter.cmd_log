@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab4_0/counter.xst" -ofn "D:/Programming/EE2230/Lab4_0/counter.syr" 
