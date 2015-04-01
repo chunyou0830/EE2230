@@ -34,7 +34,7 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_test_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="counter_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_xst.xrpt"/>
@@ -90,7 +90,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1427898633" xil_pn:in_ck="6866894578998597149" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2271277456845575406" xil_pn:start_ts="1427898633">
+    <transform xil_pn:end_ts="1427899725" xil_pn:in_ck="6866894578998597149" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2271277456845575406" xil_pn:start_ts="1427899724">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -127,11 +127,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427898209" xil_pn:in_ck="-4485474191343027656" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="802607290654399987" xil_pn:start_ts="1427898201">
+    <transform xil_pn:end_ts="1427899960" xil_pn:in_ck="-4485474191343027656" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="802607290654399987" xil_pn:start_ts="1427899952">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="counter.lso"/>
       <outfile xil_pn:name="counter.ngc"/>
@@ -140,6 +138,7 @@
       <outfile xil_pn:name="counter.stx"/>
       <outfile xil_pn:name="counter.syr"/>
       <outfile xil_pn:name="counter.xst"/>
+      <outfile xil_pn:name="counter_test_beh.prj"/>
       <outfile xil_pn:name="counter_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
