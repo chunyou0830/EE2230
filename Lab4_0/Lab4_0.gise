@@ -65,6 +65,8 @@
     <transform xil_pn:end_ts="1427879666" xil_pn:in_ck="-4485474191343027656" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="802607290654399987" xil_pn:start_ts="1427879649">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="counter.lso"/>
       <outfile xil_pn:name="counter.prj"/>
