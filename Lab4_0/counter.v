@@ -27,9 +27,9 @@ module counter(
 	 input mode;
 	 input in;
 	 input clk;
-	 output [7:0]q;
+	 output reg [7:0]q;
 	 wire [7:0]send;
-	 wire mux;
+	 reg mux;
 	 
 	 always @*
 		if(mode)
