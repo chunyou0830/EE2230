@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: NTHUEE
+// Engineer: Chun You, Yang
 // 
 // Create Date:    15:04:24 03/07/2012 
 // Design Name: 
 // Module Name:    freqdiv24 
-// Project Name: 
+// Project Name: Lab 4
 // Target Devices: 
 // Tool versions: 
 // Description: 

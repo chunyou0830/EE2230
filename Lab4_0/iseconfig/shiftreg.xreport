@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-02T16:27:28</DateModified>
+  <DateModified>2015-04-02T18:15:56</DateModified>
   <ModuleName>shiftreg</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Programming/EE2230/Lab4_0/iseconfig/shiftreg.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab4_0</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab4_0\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-02T16:27:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

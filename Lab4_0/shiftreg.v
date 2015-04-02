@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: NTHUEE
+// Engineer: Chun You, Yang
 // 
 // Create Date:    16:27:26 04/02/2015 
 // Design Name: 
 // Module Name:    shiftreg 
-// Project Name: 
+// Project Name: Lab 4
 // Target Devices: 
 // Tool versions: 
 // Description: 
