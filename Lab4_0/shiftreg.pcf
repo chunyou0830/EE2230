@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 02 16:57:15 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "q<6>" LOCATE = SITE "L7" LEVEL 1;
+COMP "q<7>" LOCATE = SITE "K6" LEVEL 1;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "T2" LEVEL 1;
+COMP "q<0>" LOCATE = SITE "K4" LEVEL 1;
+COMP "q<1>" LOCATE = SITE "K3" LEVEL 1;
+COMP "q<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "q<3>" LOCATE = SITE "K5" LEVEL 1;
+COMP "q<4>" LOCATE = SITE "H4" LEVEL 1;
+COMP "q<5>" LOCATE = SITE "H3" LEVEL 1;
+SCHEMATIC END;
+
