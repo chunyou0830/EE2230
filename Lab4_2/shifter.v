@@ -19,31 +19,32 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module shifter(
-//	in,
 	q,
 	clk,
-	rst_n
+	rst_n,
+	in
     );
-	output reg [7:0]q;
-//	input in;
+	output reg [3:0]q;
+	reg [5:0]p;
+	input [5:0]in;
 	input clk;
 	input rst_n;
 	
 	always @(posedge clk or negedge rst_n)
 		if(~rst_n)
 			begin
-				q<=8'b01010101;
+				p<=in;
 			end
 		else
 			begin
-				q[0]<=q[7];
-				q[1]<=q[0];
-				q[2]<=q[1];
-				q[3]<=q[2];
-				q[4]<=q[3];
-				q[5]<=q[4];
-				q[6]<=q[5];
-				q[7]<=q[6];
+				p[0]<=p[5];
+				p[1]<=p[0];
+				p[2]<=p[1];
+				p[3]<=p[2];
+				p[4]<=p[3];
+				p[5]<=p[4];
 			end
-			
+	
+	always @*
+		q={p[5],p[4],p[3],p[2]};
 endmodule
