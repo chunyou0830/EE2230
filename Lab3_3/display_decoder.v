@@ -48,6 +48,7 @@ always @*
 		2'b01: display={4'b1101,fsd_t};
 		2'b10: display={4'b1110,fsd_u};
 		2'b11: display={4'b1101,fsd_t};
+		default: display={19'b0000_0000_0000_0000_000};
 	endcase
 
 endmodule
