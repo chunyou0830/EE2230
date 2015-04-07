@@ -79,6 +79,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1427987013" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1427987013">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1427987081" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="341637496396867211" xil_pn:start_ts="1427987081">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -164,7 +165,7 @@
       <outfile xil_pn:name="display_pad.txt"/>
       <outfile xil_pn:name="display_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1427989718" xil_pn:in_ck="158197758065307577" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1427989705">
+    <transform xil_pn:end_ts="1428025820" xil_pn:in_ck="158197758065307577" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1428025763">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -176,7 +177,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1427989718" xil_pn:in_ck="158197758065294723" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1427989718">
+    <transform xil_pn:end_ts="1428025820" xil_pn:in_ck="158197758065294723" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1428025820">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
