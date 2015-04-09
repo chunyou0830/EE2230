@@ -1,4 +1,0 @@
-verilog work "dff.v"
-verilog work "counter.v"
-verilog work "counter_test.v"
-verilog work "C:/XilinxISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"
