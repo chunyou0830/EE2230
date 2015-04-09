@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Programming/EE2230/Lab5_0/downCounter_test_isim_beh.exe" -prj "D:/Programming/EE2230/Lab5_0/downCounter_test_beh.prj" "work.downCounter_test" "work.glbl" 

@@ -37,16 +37,14 @@ rst_n
 	 wire clk_add;
 	 
 //Module Connection
-	freq_div divider(.clk_cnt(clk_cnt),.clk_scn(clk_scn),.clk(oscillator),.rst_n(rst_n));
-	counter fsd(.fsd_u(fsd_u),.fsd_t(fsd_t),.clk(clk_cnt),.rst_n(rst_n));
+	//freq_div divider(.clk_cnt(clk_cnt),.clk_scn(clk_scn),.clk(oscillator),.rst_n(rst_n));
+	counter fsd(.fsd_u(fsd_u),.fsd_t(fsd_t),.clk(oscillator),.rst_n(rst_n));
 
 //Display
 always @*
-	case(clk_scn)
-		2'b00: display={4'b1110,fsd_u};
-		2'b01: display={4'b1101,fsd_t};
-		2'b10: display={4'b1110,fsd_u};
-		2'b11: display={4'b1101,fsd_t};
+	case(oscillator)
+		1'b0: display={4'b1110,fsd_u};
+		1'b1: display={4'b1101,fsd_t};
 		default: display={19'b0000_0000_0000_0000_000};
 	endcase
 
