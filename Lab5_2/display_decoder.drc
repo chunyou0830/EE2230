@@ -1,0 +1,48 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Apr 09 19:38:42 2015
+
+drc -z display_decoder.ncd display_decoder.pcf
+
+ERROR:PhysDesignRules:368 - The signal <led<3>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<4>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<5>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<6>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<7>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<8>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<9>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<10>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<11>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<12>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<13>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<14>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led<15>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <led<3>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<4>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<5>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<6>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<7>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<8>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<9>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<10>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<11>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<12>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<13>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<14>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led<15>_OBUF> is completely unrouted.
+ERROR:Bitgen:25 - DRC detected 26 errors and 0 warnings.  Please see the
+   previously displayed individual error or warning messages for more details.
