@@ -1,54 +1,43 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    13:56:23 03/28/2012 
-// Design Name: 
-// Module Name:    one_pulse 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
+// Company      : NTHUEE
+// Engineer     : Chun You, Yang
+// Create Date  : 13:56 03/28/2012
+// Module Name  : one_pulse 
+// Project Name : Lab5_2
 //////////////////////////////////////////////////////////////////////////////////
+`include "global.v"
 module one_pulse(
-  clk,  // clock input
-  rst_n, //active low reset
-  in_trig, // input trigger
-  out_pulse // output one pulse 
+	clk,  // clock input
+	rst_n, //active low reset
+	in_trig, // input trigger
+	out_pulse // output one pulse 
 );
 
-// Declare I/Os
-input clk;  // clock input
-input rst_n; //active low reset
-input in_trig; // input trigger
-output out_pulse; // output one pulse 
-reg out_pulse; // output one pulse 
+	// Declare I/Os
+	input clk;  // clock input
+	input rst_n; //active low reset
+	input in_trig; // input trigger
+	output out_pulse; // output one pulse 
+	reg out_pulse; // output one pulse 
 
-// Declare internal nodes
-reg in_trig_delay;
+	// Declare internal nodes
+	reg in_trig_delay;
 
 // Buffer input 
 always @(posedge clk or negedge rst_n)
-  if (~rst_n)
-    in_trig_delay <= 1'b0; 
-  else
-    in_trig_delay <= in_trig;
+	if (~rst_n)
+		in_trig_delay <= 1'b0; 
+	else
+		in_trig_delay <= in_trig;
 
 // Pulse generation
 assign out_pulse_next = in_trig & (~in_trig_delay);
 
 always @(posedge clk or negedge rst_n)
-  if (~rst_n)
-    out_pulse <=1'b0;
-  else
-    out_pulse <= out_pulse_next;
+	if (~rst_n)
+		out_pulse <=1'b0;
+	else
+		out_pulse <= out_pulse_next;
 
 endmodule

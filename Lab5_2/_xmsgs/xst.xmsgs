@@ -5,25 +5,91 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"D:\Programming\EE2230\Lab5_2\display_decoder.v" Line 48: Port <arg fmt="%s" index="1">led</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"D:\Programming\EE2230\Lab5_2\stopwatch.v" Line 45: Port <arg fmt="%s" index="1">clk_cnt</arg> is not connected to this instance
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab5_2\display_decoder.v</arg>&quot; line <arg fmt="%s" index="2">48</arg>: Output port &lt;<arg fmt="%s" index="3">led</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">downcnt</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"D:\Programming\EE2230\Lab5_2\stopwatch.v" Line 59: Port <arg fmt="%s" index="1">debounced</arg> is not connected to this instance
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_D_ssd</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"D:\Programming\EE2230\Lab5_2\stopwatch.v" Line 81: Port <arg fmt="%s" index="1">in3</arg> is not connected to this instance
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">led_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">counter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;led_1&gt; &lt;led_2&gt; &lt;led_3&gt; &lt;led_4&gt; &lt;led_5&gt; &lt;led_6&gt; &lt;led_7&gt; &lt;led_8&gt; &lt;led_9&gt; &lt;led_10&gt; &lt;led_11&gt; &lt;led_12&gt; &lt;led_13&gt; &lt;led_14&gt; &lt;led_15&gt; </arg>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Programming\EE2230\Lab5_2\stopwatch.v" Line 56: Assignment to <arg fmt="%s" index="1">rst_tmp</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">downcnt/led_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">display_decoder</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"D:\Programming\EE2230\Lab5_2\stopwatch.v" Line 81: Input port <arg fmt="%s" index="1">in3[14]</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">downcnt/bcd_t_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">display_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">in3</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">scn</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">downcnt/bcd_t_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">display_decoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">in4</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">scn</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab5_2\stopwatch.v</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">clk_cnt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab5_2\stopwatch.v</arg>&quot; line <arg fmt="%s" index="2">51</arg>: Output port &lt;<arg fmt="%s" index="3">debounced</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cnt_en_pb</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab5_2\stopwatch.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">debounced</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rst_en_pb</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">in3</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">in4</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ftsd</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/clk_cnt</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">divider/cnt_h_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">down_cnt/bcd_t_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">stopwatch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">down_cnt/bcd_t_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">stopwatch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_gen/count_200K_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_gen/count_200K_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_gen/count_200K_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_gen/count_200K_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_gen/count_200K_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">stopwatch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;clk_gen/count_200K_5&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

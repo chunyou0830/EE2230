@@ -1,6 +1,0 @@
-verilog work "SSD_Decoder.v"
-verilog work "one_pulse.v"
-verilog work "fsm.v"
-verilog work "freq_div.v"
-verilog work "bcd_counter.v"
-verilog work "display_decoder.v"

@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\XilinxISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s
+3 -n 3 -fastpaths -xml stopwatch.twx stopwatch.ncd -o stopwatch.twr
+stopwatch.pcf -ucf display.ucf
+
+Design file:              stopwatch.ncd
+Physical constraint file: stopwatch.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock oscillator
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst_n       |    3.654(R)|      SLOW  |   -0.031(R)|      SLOW  |oscillator_BUFGP  |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock oscillator to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+display<2>  |         8.438(R)|      SLOW  |         4.363(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<5>  |         9.097(R)|      SLOW  |         4.835(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<7>  |         8.067(R)|      SLOW  |         4.104(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<8>  |         8.378(R)|      SLOW  |         4.318(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<9>  |         8.385(R)|      SLOW  |         4.429(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<10> |         8.011(R)|      SLOW  |         4.212(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<11> |         8.295(R)|      SLOW  |         4.292(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<12> |         7.904(R)|      SLOW  |         3.891(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<13> |         8.260(R)|      SLOW  |         3.974(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<14> |         8.281(R)|      SLOW  |         4.328(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<17> |         8.262(R)|      SLOW  |         4.309(R)|      FAST  |oscillator_BUFGP  |   0.000|
+display<18> |         8.449(R)|      SLOW  |         4.507(R)|      FAST  |oscillator_BUFGP  |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock oscillator
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+oscillator     |    3.536|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Apr 12 12:24:38 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 235 MB
+
+
+
