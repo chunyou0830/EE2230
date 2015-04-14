@@ -42,7 +42,7 @@ clock_generator clk_gen(
 	.clk_100(clk_100hz)
 );
 
-frequency_divider divider(
+frequency_divider freq_div(
 	.clk(oscillator),
 	.rst_n(rst_n),
 	.clk_scn(clk_scn)
