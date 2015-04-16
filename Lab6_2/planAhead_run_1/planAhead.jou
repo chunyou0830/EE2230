@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Apr 16 16:26:22 2015
+# Process ID: 3496
+# Log file: D:/Programming/EE2230/Lab6_2/planAhead_run_1/planAhead.log
+# Journal file: D:/Programming/EE2230/Lab6_2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Programming/EE2230/Lab6_2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

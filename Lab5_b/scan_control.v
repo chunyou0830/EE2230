@@ -24,10 +24,10 @@ module scan_control(
 always @*
 	begin
 	case(clk)
-		2'b00: display={4'b0111,in1};
+		//2'b00: display={4'b0111,in1};
 		2'b01: display={4'b1011,in2};
-		/*2'b10: display={4'b1101,in3};
-		2'b11: display={4'b1110,in4};*/
+		2'b10: display={4'b1101,in3};
+		2'b11: display={4'b1110,in4};
 		default: display={19'b1111_1111_1111_1111_111};
 	endcase
 	end		

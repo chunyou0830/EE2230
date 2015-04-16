@@ -9,8 +9,8 @@
 `include "global.v"
 `define STAT_60 1'b1
 `define STAT_30 1'b0 
-`define RST_VAL_60 8'b0101_0000
-`define RST_VAL_30 8'b0010_0000
+`define RST_VAL_60 12'b0001_0000_0000
+`define RST_VAL_30 12'b0000_0010_0000
 
 module rst_fsm(
 	rst_value,
@@ -19,8 +19,8 @@ module rst_fsm(
 	clk,
 );
 
-	reg [7:0] rst_next;
-	output reg [7:0] rst_value;
+	reg [11:0] rst_next;
+	output reg [11:0] rst_value;
 	input in;
 	input rst_n;
 	input clk;
@@ -34,28 +34,28 @@ module rst_fsm(
 			if(in)
 				begin
 				next_state = `STAT_30;
-				rst_next = {4'd3,4'd0};//`RST_VAL_30;
+				rst_next = {4'd0,4'd3,4'd0};//`RST_VAL_30;
 				end
 			else
 				begin
 				next_state = `STAT_60;
-				rst_next = {4'd6,4'd0};//`RST_VAL_60;
+				rst_next = {4'd1,4'd0,4'd0};//`RST_VAL_60;
 				end
 		`STAT_30:
 			if(in)
 				begin
 				next_state = `STAT_60;
-				rst_next = {4'd6,4'd0};//`RST_VAL_60;
+				rst_next = {4'd1,4'd0,4'd0};//`RST_VAL_60;
 				end
 			else
 				begin
 				next_state = `STAT_30;
-				rst_next = {4'd3,4'd0};//`RST_VAL_30;
+				rst_next = {4'd0,4'd3,4'd0};//`RST_VAL_30;
 				end
 		default:
 				begin
 				next_state = `STAT_30;
-				rst_next = {4'd3,4'd0};//`RST_VAL_30;
+				rst_next = {4'd0,4'd3,4'd0};//`RST_VAL_30;
 				end
 		endcase
 			

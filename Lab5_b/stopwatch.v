@@ -23,6 +23,7 @@ module stopwatch(
 	//Displays Defs
 	wire [14:0] ftsd_2;
 	wire [14:0] ftsd_1;
+	wire [14:0] ftsd_0;
 	output [18:0] display;
 	output [15:0] led;//DEBUGGING
 
@@ -37,7 +38,7 @@ module stopwatch(
 	wire cnt_tmp;
 	wire rst_en;
 	wire rst_tmp;
-	wire [7:0] rst_val;
+	wire [11:0] rst_val;
 	wire rst_val_tmp;
 	 
 //Module Connection
@@ -91,6 +92,7 @@ rst_fsm reset_val(
 );
 
 downcounter_2d down_cnt(
+	.ftsd_m(ftsd_0),
 	.ftsd_u(ftsd_2),
 	.ftsd_t(ftsd_1),
 	.clk(clk_1hz),
@@ -100,8 +102,9 @@ downcounter_2d down_cnt(
 );
 
 scan_control scn(
-	.in1(ftsd_1),
-	.in2(ftsd_2),
+	.in2(ftsd_0),
+	.in3(ftsd_1),
+	.in4(ftsd_2),
 	.clk(clk_scn),
 	.display(display)
 );

@@ -1,0 +1,9 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Programming/EE2230/Lab6_2/bcd_adder_test_isim_beh.exe -prj D:/Programming/EE2230/Lab6_2/bcd_adder_test_beh.prj work.bcd_adder_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Programming/EE2230/Lab6_2/bcd_adder.v" into library work
+ERROR:HDLCompiler:806 - "D:/Programming/EE2230/Lab6_2/bcd_adder.v" Line 30: Syntax error near "=".
+ERROR:HDLCompiler:806 - "D:/Programming/EE2230/Lab6_2/bcd_adder.v" Line 37: Syntax error near "endmodule".
+Verilog file D:/Programming/EE2230/Lab6_2/bcd_adder.v ignored due to errors

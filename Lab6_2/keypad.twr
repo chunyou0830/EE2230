@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml keypad.twx keypad.ncd -o keypad.twr keypad.pcf -ucf
+keypad.ucf
+
+Design file:              keypad.ncd
+Physical constraint file: keypad.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+display<2>  |         9.843(R)|      SLOW  |         5.211(R)|      FAST  |clk_BUFGP         |   0.000|
+display<5>  |         9.276(R)|      SLOW  |         4.848(R)|      FAST  |clk_BUFGP         |   0.000|
+display<7>  |         9.176(R)|      SLOW  |         4.596(R)|      FAST  |clk_BUFGP         |   0.000|
+display<8>  |         9.312(R)|      SLOW  |         4.662(R)|      FAST  |clk_BUFGP         |   0.000|
+display<9>  |         9.386(R)|      SLOW  |         4.896(R)|      FAST  |clk_BUFGP         |   0.000|
+display<10> |         9.120(R)|      SLOW  |         4.815(R)|      FAST  |clk_BUFGP         |   0.000|
+display<11> |         8.590(R)|      SLOW  |         4.441(R)|      FAST  |clk_BUFGP         |   0.000|
+display<12> |         8.865(R)|      SLOW  |         4.481(R)|      FAST  |clk_BUFGP         |   0.000|
+display<13> |         9.208(R)|      SLOW  |         4.771(R)|      FAST  |clk_BUFGP         |   0.000|
+display<14> |         9.831(R)|      SLOW  |         5.185(R)|      FAST  |clk_BUFGP         |   0.000|
+display<15> |         9.397(R)|      SLOW  |         5.049(R)|      FAST  |clk_BUFGP         |   0.000|
+display<16> |         9.367(R)|      SLOW  |         5.027(R)|      FAST  |clk_BUFGP         |   0.000|
+display<17> |         9.236(R)|      SLOW  |         4.873(R)|      FAST  |clk_BUFGP         |   0.000|
+display<18> |         9.161(R)|      SLOW  |         4.821(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock rst_n to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)               | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------+--------+
+display<2>  |        13.091(F)|      SLOW  |         7.435(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.570(F)|      SLOW  |         7.145(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<5>  |        12.524(F)|      SLOW  |         7.072(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.003(F)|      SLOW  |         6.782(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<7>  |        12.723(F)|      SLOW  |         7.366(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.846(F)|      SLOW  |         7.351(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<8>  |        12.118(F)|      SLOW  |         6.871(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        11.949(F)|      SLOW  |         6.697(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<9>  |        12.761(F)|      SLOW  |         7.049(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.074(F)|      SLOW  |         6.867(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<10> |        13.163(F)|      SLOW  |         7.606(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        13.140(F)|      SLOW  |         7.572(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<11> |        12.832(F)|      SLOW  |         7.293(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.837(F)|      SLOW  |         7.185(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<12> |        12.501(F)|      SLOW  |         7.289(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.760(F)|      SLOW  |         7.216(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<13> |        12.370(F)|      SLOW  |         6.877(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.129(F)|      SLOW  |         6.942(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+display<14> |        12.910(F)|      SLOW  |         7.292(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+            |        12.213(F)|      SLOW  |         6.892(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+led<7>      |         9.142(F)|      SLOW  |         5.157(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+led<8>      |         9.318(F)|      SLOW  |         5.269(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+led<9>      |         9.318(F)|      SLOW  |         5.269(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+led<10>     |         9.482(F)|      SLOW  |         5.369(F)|      FAST  |num_in/state_GND_12_o_Mux_15_o  |   0.000|
+led<12>     |         9.294(F)|      SLOW  |         5.295(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+led<13>     |         9.294(F)|      SLOW  |         5.295(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+led<14>     |         9.968(F)|      SLOW  |         5.697(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+led<15>     |         9.968(F)|      SLOW  |         5.697(F)|      FAST  |num_in/state_pad_pressed_Mux_7_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.697|         |         |         |
+rst_n          |    1.981|    1.981|         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Apr 16 20:21:58 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 236 MB
+
+
+
