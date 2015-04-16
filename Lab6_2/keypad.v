@@ -52,7 +52,7 @@ frequency_divider freq_div(
 	.rst_n(rst_n)
 );
 
-push_button add_pb(
+push_button add_pb( 
 	.clk(clk_scn[0]),
 	.rst_n(rst_n),
 	.pb_in(pb_in),
@@ -82,7 +82,6 @@ num_input_fsm num_in(
 bcd_adder bcd_add(
 	.augend(augend),
 	.addend(addend),
-	.cin(4'b0),
 	.sum(sum),
 	.cout(cout)
 );

@@ -1,34 +1,41 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: NTHUEE
-// Engineer: Chun You, Yang
-// Create Date: 15:34 04/16/2015 
-// Module Name: bcd_adder 
-// Project Name: Lab6_2
+// Company: 
+// Engineer: 
+// 
+// Create Date:    23:31:11 04/16/2015 
+// Design Name: 
+// Module Name:    bcd_adder 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
 //////////////////////////////////////////////////////////////////////////////////
 module bcd_adder(
-	augend,
 	addend,
-	cin,
+	augend,
 	sum,
 	cout
 );
-
-	input [3:0] augend;
-	input [3:0] addend;
-	input [3:0] cin;
+	input [3:0] addend, augend;
+	output [3:0] sum, cout;
 	
-	output reg [3:0] sum;
-	output reg [3:0] cout;
-	
-	reg [4:0] sum_tmp;
+	reg [7:0] sum_tmp;
 	
 	always @*
 	begin
-		sum_tmp = augend + addend + cin;
-		if (sum_tmp > 4'd9)
+		sum_tmp = addend + augend;
+		if(sum_tmp > 4'd9)
 			sum_tmp = sum_tmp + 4'd6;
-		else
-			sum_tmp = sum_tmp;
 	end
+	
+	assign {cout, sum} = sum_tmp;
+
 endmodule

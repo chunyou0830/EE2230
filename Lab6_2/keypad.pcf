@@ -1,8 +1,23 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Apr 16 20:21:19 2015
+// Written by: Map P.20131013 on Thu Apr 16 23:56:49 2015
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "display<6>" LOCATE = SITE "T3" LEVEL 1;
+COMP "display<7>" LOCATE = SITE "R5" LEVEL 1;
+COMP "row_scn<0>" LOCATE = SITE "K2" LEVEL 1;
+COMP "display<8>" LOCATE = SITE "N5" LEVEL 1;
+COMP "row_scn<1>" LOCATE = SITE "K1" LEVEL 1;
+COMP "display<9>" LOCATE = SITE "R3" LEVEL 1;
+COMP "row_scn<2>" LOCATE = SITE "L4" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "K4" LEVEL 1;
+COMP "row_scn<3>" LOCATE = SITE "L3" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "display<10>" LOCATE = SITE "U7" LEVEL 1;
+COMP "display<11>" LOCATE = SITE "T5" LEVEL 1;
+COMP "display<12>" LOCATE = SITE "V5" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "K6" LEVEL 1;
 COMP "display<13>" LOCATE = SITE "N4" LEVEL 1;
 COMP "led<8>" LOCATE = SITE "G3" LEVEL 1;
 COMP "display<14>" LOCATE = SITE "P6" LEVEL 1;
@@ -28,20 +43,5 @@ COMP "display<2>" LOCATE = SITE "R7" LEVEL 1;
 COMP "display<3>" LOCATE = SITE "V7" LEVEL 1;
 COMP "display<4>" LOCATE = SITE "V4" LEVEL 1;
 COMP "display<5>" LOCATE = SITE "T4" LEVEL 1;
-COMP "display<6>" LOCATE = SITE "T3" LEVEL 1;
-COMP "display<7>" LOCATE = SITE "R5" LEVEL 1;
-COMP "row_scn<0>" LOCATE = SITE "K2" LEVEL 1;
-COMP "display<8>" LOCATE = SITE "N5" LEVEL 1;
-COMP "row_scn<1>" LOCATE = SITE "K1" LEVEL 1;
-COMP "display<9>" LOCATE = SITE "R3" LEVEL 1;
-COMP "row_scn<2>" LOCATE = SITE "L4" LEVEL 1;
-COMP "led<0>" LOCATE = SITE "K4" LEVEL 1;
-COMP "row_scn<3>" LOCATE = SITE "L3" LEVEL 1;
-COMP "led<2>" LOCATE = SITE "L5" LEVEL 1;
-COMP "clk" LOCATE = SITE "R10" LEVEL 1;
-COMP "display<10>" LOCATE = SITE "U7" LEVEL 1;
-COMP "display<11>" LOCATE = SITE "T5" LEVEL 1;
-COMP "display<12>" LOCATE = SITE "V5" LEVEL 1;
-COMP "led<7>" LOCATE = SITE "K6" LEVEL 1;
 SCHEMATIC END;
 
