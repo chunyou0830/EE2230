@@ -42,12 +42,21 @@ always @*
 			begin
 			state_next = `STAT_AUGEND;
 			end
-		if(pad_pressed)
-			augend = in;
-		else if(~rst_n)
+		if(~rst_n)
+			begin
+			addend = 4'd0;
 			augend = 4'd0;
+			end
+		else if(pad_pressed)
+			begin
+			augend = in;
+			addend = addend;
+			end
 		else
+			begin
+			addend = addend;
 			augend = augend;
+			end
 		end
 	1'b1:
 		begin
@@ -55,12 +64,21 @@ always @*
 			state_next = `STAT_AUGEND;
 		else
 			state_next = `STAT_ADDEND;
-		if(pad_pressed)
-			addend = in;
-		else if (~rst_n)
+		if (~rst_n)
+			begin
 			addend = 4'd0;
+			augend = 4'd0;
+			end
+		else if(pad_pressed)
+			begin
+			augend = augend;
+			addend = in;
+			end
 		else
+			begin
+			augend = augend;
 			addend = addend;
+			end
 		end
 	default:
 			begin

@@ -1,10 +1,19 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name Lab6_2 -dir "D:/Programming/EE2230/Lab6_2/planAhead_run_2" -part xc6slx16csg324-3
+create_project -name Lab6_2 -dir "D:/Programming/EE2230/Lab6_2/planAhead_run_4" -part xc6slx16csg324-3
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "keypad.ucf" [current_fileset -constrset]
+set hdlfile [add_files [list {one_pulse.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {debounce_circuit.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {push_button.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
 set hdlfile [add_files [list {num_input_fsm.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
