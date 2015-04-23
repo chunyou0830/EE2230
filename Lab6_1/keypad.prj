@@ -1,5 +1,0 @@
-verilog work "keypad_scan.v"
-verilog work "FTSD_scan.v"
-verilog work "FTSD_decoder.v"
-verilog work "frequency_divider.v"
-verilog work "keypad.v"

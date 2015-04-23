@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name Lab6_2 -dir "D:/Programming/EE2230/Lab6_2/planAhead_run_4" -part xc6slx16csg324-3
+create_project -name Lab6_2 -dir "D:/Programming/EE2230/Lab6_2/planAhead_run_5" -part xc6slx16csg324-3
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "keypad.ucf" [current_fileset -constrset]

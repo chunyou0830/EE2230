@@ -37,10 +37,10 @@ module keypad(
 	
 	//Adders
 	wire [3:0] augend, addend, sum, cout;
-	wire [14:0] augend_ftsd, addend_ftsd, sum_ftsd, cout_ftsd;
 	wire add;
 	
 	//Displaying
+	wire [7:0] bcd_display;
 	output [18:0] display;
 	output [15:0] led; //DEBUGGING
 
@@ -86,34 +86,21 @@ bcd_adder bcd_add(
 	.cout(cout)
 );
 
-FTSD_decoder ftsd_dec_aug(
-	.ftsd(augend_ftsd),
-	.bcd(augend)
-);
-
-FTSD_decoder ftsd_dec_add(
-	.ftsd(addend_ftsd),
-	.bcd(addend)
-);
-
-FTSD_decoder ftsd_dec_c(
-	.ftsd(cout_ftsd),
-	.bcd(cout)
-);
-
-FTSD_decoder ftsd_dec_sum(
-	.ftsd(sum_ftsd),
-	.bcd(sum)
-);
-
 FTSD_scan ftsd_scn(
-	.in1(augend_ftsd),
-	.in2(addend_ftsd),
-	.in3(cout_ftsd),
-	.in4(sum_ftsd),
+	.in1(augend),
+	.in2(addend),
+	.in3(cout),
+	.in4(sum),
 	.clk(clk_scn),
-	.display(display)
+	.display(bcd_display)
 );
+
+FTSD_decoder ftsd_dec(
+	.ftsd(display[14:0]),
+	.bcd(bcd_display[3:0])
+);
+
+assign display[18:15] = bcd_display[7:4];
 
 assign led[15:12] = addend;
 assign led[10:7] = augend;
