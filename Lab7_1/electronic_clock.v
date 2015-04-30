@@ -9,6 +9,7 @@ module electronic_clock(
 	clk,
 	pb_in_rst,
 	display,
+	led,
 	hours_switch
 );
 
@@ -30,7 +31,7 @@ module electronic_clock(
 	wire [14:0] dispA, dispB, dispC, dispD;
 	wire [1:0] clk_scn;
 	output [18:0] display;
-
+	output [15:0] led;
 
 
 	//Module Connection
@@ -50,20 +51,50 @@ frequency_divider freq_div(
 );
 
 upcounter_tens cnt_sec(
-	.out(sec),
-	.rst_val({4'd6,4'd0}),
-	.clk(clk_1hz),
+	.cnt(sec),
+	.increase(`ENABLED),
+	.cout(carry_sec),
+	.rst_val({4'd5,4'd9}),
+	.clk(clk_scn[0]),
+	.rst(rst)
+);
+
+upcounter_tens cnt_min(
+	.cnt(min),
+	.increase(carry_sec),
+	.cout(carry_min),
+	.rst_val({4'd5,4'd9}),
+	.clk(clk_scn[0]),
+	.rst(rst)
+);
+
+upcounter_tens cnt_hr(
+	.cnt(hr),
+	.increase(carry_min & carry_sec),
+	.cout(carry_hr),
+	.rst_val({4'd1,4'd0}),
+	.clk(clk_scn[0]),
 	.rst(rst)
 );
 
 FTSD_decoder ftsd_dec_A(
-	.bcd(sec[7:4]),
+	.bcd(hr[7:4]),
 	.ftsd(dispA)
 );
 
 FTSD_decoder ftsd_dec_B(
-	.bcd(sec[3:0]),
+	.bcd(hr[3:0]),
 	.ftsd(dispB)
+);
+
+FTSD_decoder ftsd_dec_C(
+	.bcd(min[7:4]),
+	.ftsd(dispC)
+);
+
+FTSD_decoder ftsd_dec_D(
+	.bcd(min[3:0]),
+	.ftsd(dispD)
 );
 
 FTSD_scan ftsd_scn(
@@ -74,4 +105,8 @@ FTSD_scan ftsd_scn(
 	.clk(clk_scn),
 	.display(display)
 );
+
+assign led[0] = carry_sec;
+assign led[1] = carry_min;
+assign led[2] = carry_hr;
 endmodule
