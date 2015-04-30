@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Programming\EE2230\Lab7_1\electronic_clock.v" Line 42: Assignment to <arg fmt="%s" index="1">clk_100hz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Programming\EE2230\Lab7_1\upcounter_tens.v" Line 61: Assignment to <arg fmt="%s" index="1">cout_d1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\Programming\EE2230\Lab7_1\electronic_clock.v" Line 30: Net &lt;<arg fmt="%s" index="1">dispC[14]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">hours_switch</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab7_1\electronic_clock.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">clk_100</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clk_gen</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab7_1\electronic_clock.v</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">clk_cnt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">freq_div</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dispC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dispD</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab7_1\upcounter_tens.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">carry</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dig1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ftsd</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/count_200K_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_gen/clk_100</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/clk_cnt</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">freq_div/cnt_h_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clk_gen/count_20M_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">electronic_clock</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;freq_div/cnt_l_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
