@@ -43,7 +43,7 @@ reg load_def; // enabled to load second value
 wire cout_d0, cout_d1; // BCD counter carryout
 
 // return from 59 to 00
-always @*
+always @(out)
 	if (cnt==rst_val)
 		begin
 		load_def = `ENABLED;

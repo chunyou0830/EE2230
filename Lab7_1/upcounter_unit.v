@@ -31,10 +31,10 @@ reg carry; // carry out indicator for counter to next stage
 
 // combinational part for BCD counter 
 always @*
-  if (increase==`DISABLED)
-    value_tmp = value;
-  else if (load_default==`ENABLED)
+  if (load_default==`ENABLED)
     value_tmp = def_value;
+  else if (increase==`DISABLED)
+    value_tmp = value;
   else if ((increase==`ENABLED)&&(value==`BCD_NINE))
     value_tmp = `BCD_ZERO;
   else
