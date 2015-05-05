@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:53:06 04/30/2015 
+// Create Date:    11:38:20 05/05/2015 
 // Design Name: 
-// Module Name:    upcounter_tens 
+// Module Name:    upcounter_thousands 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 `include "global.v"
-module upcounter_tens(
+module upcounter_thousands(
 	cnt,
 	increase,
 	cout,
@@ -30,19 +30,19 @@ module upcounter_tens(
 );
 
 // outputs
-output [7:0] cnt; // digit 1 for second
+output [15:0] cnt; // digit 1 for second
 output cout;
 reg cout_tmp;
 // inputs
 input increase;
-input [7:0] rst_val;
-input [7:0] def_val;
+input [15:0] rst_val;
+input [15:0] def_val;
 input clk; // global clock signal
 input rst; // low active reset
 
 // temporatory nets
 reg load_def; // enabled to load second value
-wire cout_d0, cout_d1; // BCD counter carryout
+wire cout_d0, cout_d1, cout_d2, cout_d3; // BCD counter carryout
 
 // return from 59 to 00
 always @* //DEBUGGING
@@ -79,12 +79,28 @@ upcounter_unit dig1(
   .def_value(def_val[7:4]) // default value for counter
 );
 
-/*one_pulse cout_op(
-	.clk(clk),  // clock input
-	.rst(rst), //active low reset
-	.in_trig(cout_tmp), // input trigger
-	.out_pulse(cout) // output one pulse 
-);*/
+// counter for digit 2
+upcounter_unit dig2(
+  .value(cnt[11:8]),  // digit 2 of second
+  .carry(cout_d2),  // carry out for digit 2
+  .clk(clk),  // clock
+  .rst(rst),  // asynchronous low active reset
+  .increase(cout_d1),  // increasing when digit 0 carry out
+  .load_default(load_def),  // enable load default value
+  .def_value(def_val[11:8]) // default value for counter
+);
+
+// counter for digit 3
+upcounter_unit dig3(
+  .value(cnt[15:12]),  // digit 3 of second
+  .carry(cout_d3),  // carry out for digit 3
+  .clk(clk),  // clock
+  .rst(rst),  // asynchronous low active reset
+  .increase(cout_d2),  // increasing when digit 0 carry out
+  .load_default(load_def),  // enable load default value
+  .def_value(def_val[15:12]) // default value for counter
+);
+
 assign cout = cout_tmp;
 
 

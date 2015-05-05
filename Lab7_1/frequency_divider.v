@@ -8,14 +8,18 @@
 module frequency_divider(
 	clk_cnt,
 	clk_scn,
+	clk_fst,
 	clk,
 	rst
 );
 
 	output clk_cnt;
 	output [1:0] clk_scn;
+	output clk_fst;
 	input clk;
 	input rst;
+
+	assign clk_fst = cnt_l[0];
 
 	reg clk_cnt;
 	reg [1:0] clk_scn;

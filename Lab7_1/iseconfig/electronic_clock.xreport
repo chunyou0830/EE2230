@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-01T01:04:55</DateModified>
+  <DateModified>2015-05-05T12:03:24</DateModified>
   <ModuleName>electronic_clock</ModuleName>
-  <SummaryTimeStamp>2015-05-01T00:52:46</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-05-05T11:48:38</SummaryTimeStamp>
   <SavedFilePath>D:/Programming/EE2230/Lab7_1/iseconfig/electronic_clock.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Programming/EE2230/Lab7_1\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-30T17:10:45</DateInitialized>
