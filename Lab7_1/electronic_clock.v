@@ -8,14 +8,15 @@
 module electronic_clock(
 	clk,
 	pb_in_rst,
+	dip,
 	display,
-	led,
-	hours_switch
+	led
 );
 
 	//Basic input and operators
 	input clk;
 	input pb_in_rst;
+	input [2:0] dip;
 	wire rst;
 	assign rst = ~pb_in_rst;
 	
@@ -26,10 +27,10 @@ module electronic_clock(
 	//Clock
 	wire [7:0] sec, min, hr, day, mon;
 	wire [15:0] year;
-	reg [7:0] day_rst_val;
-	input hours_switch;
+	wire [7:0] day_rst_val;
 	
 	//Display I/Os
+	wire [23:0] disp_dec;
 	wire [14:0] dispA, dispB, dispC, dispD;
 	wire [1:0] clk_scn;
 	output [18:0] display;
@@ -113,34 +114,40 @@ upcounter_thousands cnt_year(
 	.rst(rst)
 );
 
+date_setting day_set(
+	.mon(mon),
+	.year(year),
+	.day_rst_val(day_rst_val)
+);
 
-always @*
-if(mon=={4'd0,4'd1}|mon=={4'd0,4'd3}|mon=={4'd0,4'd5}|mon=={4'd0,4'd7}|mon=={4'd0,4'd8}|mon=={4'd1,4'd0}|mon=={4'd1,4'd2})
-	day_rst_val={4'd3,4'd2};
-else if(mon=={4'd0,4'd4}|mon=={4'd0,4'd6}|mon=={4'd0,4'd9}|mon=={4'd1,4'd1})
-	day_rst_val={4'd3,4'd1};
-else if(mon=={4'd0,4'd2})
-	day_rst_val={4'd2,4'd9};
-else
-	day_rst_val={4'd3,4'd1};
+display_control disp_ctl(
+	.dip(dip),
+	.sec(sec),
+	.min(min),
+	.hr(hr),
+	.day(day),
+	.mon(mon),
+	.year(year),
+	.disp(disp_dec)
+);
 
 FTSD_decoder ftsd_dec_A(
-	.bcd(year[15:12]),
+	.bcd(disp_dec[23:18]),
 	.ftsd(dispA)
 );
 
 FTSD_decoder ftsd_dec_B(
-	.bcd(year[11:8]),
+	.bcd(disp_dec[17:12]),
 	.ftsd(dispB)
 );
 
 FTSD_decoder ftsd_dec_C(
-	.bcd(year[7:4]),
+	.bcd(disp_dec[11:6]),
 	.ftsd(dispC)
 );
 
 FTSD_decoder ftsd_dec_D(
-	.bcd(year[3:0]),
+	.bcd(disp_dec[5:0]),
 	.ftsd(dispD)
 );
 

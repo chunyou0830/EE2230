@@ -45,6 +45,27 @@
 `define FTSD_D     `FTSD_BIT_WIDTH'b0000_1111_1011_011 //D
 `define FTSD_E     `FTSD_BIT_WIDTH'b0110_0000_1111_111 //E
 `define FTSD_F     `FTSD_BIT_WIDTH'b0111_0000_1111_111 //F
+
+`define FTSD_G     `FTSD_BIT_WIDTH'b0100_0010_1111_111 //G
+`define FTSD_H     `FTSD_BIT_WIDTH'b1001_0000_1111_111 //H
+`define FTSD_I     `FTSD_BIT_WIDTH'b0110_1111_1011_111 //I
+`define FTSD_J     `FTSD_BIT_WIDTH'b1000_0111_1111_111 //J
+`define FTSD_K     `FTSD_BIT_WIDTH'b1111_0001_1101_101 //K
+`define FTSD_L     `FTSD_BIT_WIDTH'b1110_0011_1111_111 //L
+`define FTSD_M     `FTSD_BIT_WIDTH'b1001_0011_0101_111 //M
+`define FTSD_N     `FTSD_BIT_WIDTH'b1001_0011_0111_101 //N
+`define FTSD_O     `FTSD_BIT_WIDTH'b0000_0011_1111_111 //O
+`define FTSD_P     `FTSD_BIT_WIDTH'b0011_0000_1111_111 //P
+`define FTSD_Q     `FTSD_BIT_WIDTH'b0000_0011_1111_101 //Q
+`define FTSD_R     `FTSD_BIT_WIDTH'b0011_0000_1111_101 //R
+`define FTSD_S     `FTSD_BIT_WIDTH'b0100_1100_0111_111 //S
+`define FTSD_T     `FTSD_BIT_WIDTH'b0111_1111_1011_111 //T
+`define FTSD_U     `FTSD_BIT_WIDTH'b1000_0011_1111_111 //U
+`define FTSD_V     `FTSD_BIT_WIDTH'b1111_0011_1100_111 //V
+`define FTSD_W     `FTSD_BIT_WIDTH'b1001_0011_1110_101 //W
+`define FTSD_X     `FTSD_BIT_WIDTH'b1111_1111_0100_101 //X
+`define FTSD_Y     `FTSD_BIT_WIDTH'b1111_1111_0101_011 //Y
+`define FTSD_Z     `FTSD_BIT_WIDTH'b0110_1111_1100_111 //Z
 `define FTSD_DEFAULT   `FTSD_BIT_WIDTH'b1111_1111_1111_111 //default
 
 // Keypad scan
@@ -87,6 +108,45 @@
 `define BCD_EIGHT 4'd8 // 2 for BCD
 `define BCD_NINE 4'd9 // 9 for BCD
 `define BCD_DEF 4'd15 // all 1
+
+// Fonts
+`define FONT_ZERO 6'd0
+`define FONT_ONE 6'd1
+`define FONT_TWO 6'd2
+`define FONT_THREE 6'd3
+`define FONT_FOUR 6'd4
+`define FONT_FIVE 6'd5
+`define FONT_SIX 6'd6
+`define FONT_SEVEN 6'd7
+`define FONT_EIGHT 6'd8
+`define FONT_NINE 6'd9
+`define FONT_A 6'd10
+`define FONT_B 6'd11
+`define FONT_C 6'd12
+`define FONT_D 6'd13
+`define FONT_E 6'd14
+`define FONT_F 6'd15
+`define FONT_G 6'd16
+`define FONT_H 6'd17
+`define FONT_I 6'd18
+`define FONT_J 6'd19
+`define FONT_K 6'd20
+`define FONT_L 6'd21
+`define FONT_M 6'd22
+`define FONT_N 6'd23
+`define FONT_O 6'd24
+`define FONT_P 6'd25
+`define FONT_Q 6'd26
+`define FONT_R 6'd27
+`define FONT_S 6'd28
+`define FONT_T 6'd29
+`define FONT_U 6'd30
+`define FONT_V 6'd31
+`define FONT_W 6'd32
+`define FONT_X 6'd33
+`define FONT_Y 6'd34
+`define FONT_Z 6'd35
+`define FONT_DEF 6'd63
 
 //Calculator
 `define CALC_RST 2'b00

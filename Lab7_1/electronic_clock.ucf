@@ -50,3 +50,8 @@ NET "led[2]" LOC = L5;
 #NET "row_scn[2]" LOC = L4;
 #NET "row_scn[1]" LOC = K1;
 #NET "row_scn[0]" LOC = K2;
+
+// DIP switches
+NET "dip[0]" LOC = T1;
+NET "dip[1]" LOC = P2;
+NET "dip[2]" LOC = P1;
