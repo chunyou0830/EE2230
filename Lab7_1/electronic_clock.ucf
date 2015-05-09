@@ -55,3 +55,5 @@ NET "led[2]" LOC = L5;
 NET "dip[0]" LOC = T1;
 NET "dip[1]" LOC = P2;
 NET "dip[2]" LOC = P1;
+NET "dip[3]" LOC = L2;
+NET "dip[4]" LOC = M1;

@@ -16,7 +16,7 @@ module electronic_clock(
 	//Basic input and operators
 	input clk;
 	input pb_in_rst;
-	input [2:0] dip;
+	input [4:0] dip;
 	wire rst;
 	assign rst = ~pb_in_rst;
 	
@@ -47,6 +47,7 @@ clock_generator clk_gen(
 );
 
 frequency_divider freq_div(
+	.dip(dip[4:3]),
 	.clk_cnt(),
 	.clk_scn(clk_scn),
 	.clk_fst(clk_fst),
@@ -121,7 +122,7 @@ date_setting day_set(
 );
 
 display_control disp_ctl(
-	.dip(dip),
+	.dip(dip[2:0]),
 	.sec(sec),
 	.min(min),
 	.hr(hr),
