@@ -8,7 +8,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module push_button(
 	clk,
-	rst_n,
+	rst,
 	pb_in,
 	pb_out,
 	debounced
@@ -16,7 +16,7 @@ module push_button(
 
 	//Defs
 	input clk;
-	input rst_n;
+	input rst;
 	input pb_in;
 	output pb_out;
 	output reg debounced;
@@ -26,14 +26,14 @@ module push_button(
 	//Module Connection
 debounce_circuit PB_1(
 	.clk(clk),
-	.rst_n(rst_n),
+	.rst(rst),
 	.pb_in(pb_in),
 	.pb_debounced(deb_to_op)
 );
 
 one_pulse PB_2(
 	.clk(clk),
-	.rst_n(rst_n),
+	.rst(rst),
 	.in_trig(debounced),
 	.out_pulse(pb_out)
 );

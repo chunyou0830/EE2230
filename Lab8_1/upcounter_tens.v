@@ -31,8 +31,7 @@ module upcounter_tens(
 
 // outputs
 output [7:0] cnt; // digit 1 for second
-output cout;
-reg cout_tmp;
+output reg cout;
 // inputs
 input increase;
 input [7:0] rst_val;
@@ -49,12 +48,12 @@ always @* //DEBUGGING
 	if (cnt==rst_val)
 		begin
 		load_def = `ENABLED;
-		cout_tmp = `ENABLED;
+		cout = `ENABLED;
 		end
 	else
 		begin
 		load_def = `DISABLED;
-		cout_tmp = `DISABLED;
+		cout = `DISABLED;
 		end
 
 // counter for digit 0
@@ -78,14 +77,6 @@ upcounter_unit dig1(
   .load_default(load_def),  // enable load default value
   .def_value(def_val[7:4]) // default value for counter
 );
-
-/*one_pulse cout_op(
-	.clk(clk),  // clock input
-	.rst(rst), //active low reset
-	.in_trig(cout_tmp), // input trigger
-	.out_pulse(cout) // output one pulse 
-);*/
-assign cout = cout_tmp;
 
 
 endmodule
