@@ -1,6 +1,6 @@
 // Basic Inputs
 NET "clk" LOC = R10;
-NET "pb_in_rst" LOC = N3;
+NET "pb_rst" LOC = N3;
 
 // 14-seg Display
 NET "display[18]" LOC = T6;
@@ -24,9 +24,9 @@ NET "display[1]" LOC = T7;
 NET "display[0]" LOC = U5;
 
 // LEDs
-NET "led[0]" LOC = K4;
-NET "led[1]" LOC = K3;
-NET "led[2]" LOC = L5;
+#NET "led[0]" LOC = K4;
+#NET "led[1]" LOC = K3;
+#NET "led[2]" LOC = L5;
 #NET "led[3]" LOC = K5;
 #NET "led[4]" LOC = H4;
 #NET "led[5]" LOC = H3;

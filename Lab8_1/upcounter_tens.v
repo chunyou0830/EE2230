@@ -1,22 +1,8 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    17:53:06 04/30/2015 
-// Design Name: 
+// Engineer: Chun You, Yang
+// Create Date:    17:53 04/30/2015
 // Module Name:    upcounter_tens 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
 //////////////////////////////////////////////////////////////////////////////////
 `include "global.v"
 module upcounter_tens(

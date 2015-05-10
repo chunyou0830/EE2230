@@ -7,7 +7,7 @@
 `include "global.v"
 `define DISP_REAL 1'b0
 `define DISP_LAP 1'b1
-module FTSD_control(
+module upcounter_lap(
 	clk,
 	rst,
 	pb_in,
