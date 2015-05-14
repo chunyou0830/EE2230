@@ -24,22 +24,22 @@ NET "display[1]" LOC = T7;
 NET "display[0]" LOC = U5;
 
 // LEDs
-#NET "led[0]" LOC = K4;
-#NET "led[1]" LOC = K3;
-#NET "led[2]" LOC = L5;
-#NET "led[3]" LOC = K5;
-#NET "led[4]" LOC = H4;
-#NET "led[5]" LOC = H3;
-#NET "led[6]" LOC = L7;
-#NET "led[7]" LOC = K6;
-#NET "led[8]" LOC = G3;
-#NET "led[9]" LOC = G1;
-#NET "led[10]" LOC = J7;
-#NET "led[11]" LOC = L6;
-#NET "led[12]" LOC = F2;
-#NET "led[13]" LOC = F1;
-#NET "led[14]" LOC = H6;
-#NET "led[15]" LOC = H5;
+NET "led[0]" LOC = K4;
+NET "led[1]" LOC = K3;
+NET "led[2]" LOC = L5;
+NET "led[3]" LOC = K5;
+NET "led[4]" LOC = H4;
+NET "led[5]" LOC = H3;
+NET "led[6]" LOC = L7;
+NET "led[7]" LOC = K6;
+NET "led[8]" LOC = G3;
+NET "led[9]" LOC = G1;
+NET "led[10]" LOC = J7;
+NET "led[11]" LOC = J6;
+NET "led[12]" LOC = F2;
+NET "led[13]" LOC = F1;
+NET "led[14]" LOC = H6;
+NET "led[15]" LOC = H5;
 
 // Keypad Scan
 #NET "col_in[3]" LOC = H1;
@@ -52,7 +52,7 @@ NET "display[0]" LOC = U5;
 #NET "row_scn[0]" LOC = K2;
 
 // DIP switches
-#NET "dip[0]" LOC = T1;
+NET "dip" LOC = T1;
 #NET "dip[1]" LOC = P2;
 #NET "dip[2]" LOC = P1;
 #NET "dip[3]" LOC = L2;
@@ -61,3 +61,5 @@ NET "display[0]" LOC = U5;
 // Push Buttons
 NET "pb_in[0]" LOC = T2;
 NET "pb_in[1]" LOC = U1;
+NET "pb_in_set[0]" LOC = U2;
+NET "pb_in_set[1]" LOC = M5;

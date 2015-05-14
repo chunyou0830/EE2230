@@ -17,6 +17,9 @@ set_property library work $hdlfile
 set hdlfile [add_files [list {upcounter_tens.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
+set hdlfile [add_files [list {upcounter_lap.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
 set hdlfile [add_files [list {upcounter_control.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
@@ -27,9 +30,6 @@ set hdlfile [add_files [list {FTSD_scan.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
 set hdlfile [add_files [list {FTSD_decoder.v}]]
-set_property file_type Verilog $hdlfile
-set_property library work $hdlfile
-set hdlfile [add_files [list {FTSD_control.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
 set hdlfile [add_files [list {frequency_divider.v}]]

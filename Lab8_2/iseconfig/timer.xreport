@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-10T13:04:57</DateModified>
+  <DateModified>2015-05-14T13:53:46</DateModified>
   <ModuleName>timer</ModuleName>
-  <SummaryTimeStamp>2015-05-10T13:03:02</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-05-14T13:53:21</SummaryTimeStamp>
   <SavedFilePath>D:/Programming/EE2230/Lab8_2/iseconfig/timer.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab8_2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab8_2\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-10T12:01:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="timer_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="timer_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="timer_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="timer_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="timer_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="timer.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-10T09:44:35</DateModified>
+  <DateModified>2015-05-12T13:20:22</DateModified>
   <ModuleName>stop_watch</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Programming/EE2230/Lab8_1/iseconfig/stop_watch.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab8_1</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Programming/EE2230/Lab8_1\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-10T09:42:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
