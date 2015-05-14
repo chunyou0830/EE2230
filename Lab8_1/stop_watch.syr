@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.52 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.52 secs
  
 --> Reading design: stop_watch.prj
 
@@ -115,7 +115,7 @@ Analyzing Verilog file "D:\Programming\EE2230\Lab8_1\debounce_circuit.v" into li
 Parsing verilog file "global.v" included at line 9.
 Parsing module <debounce_circuit>.
 Analyzing Verilog file "D:\Programming\EE2230\Lab8_1\upcounter_tens.v" into library work
-Parsing verilog file "global.v" included at line 21.
+Parsing verilog file "global.v" included at line 7.
 Parsing module <upcounter_tens>.
 Analyzing Verilog file "D:\Programming\EE2230\Lab8_1\upcounter_lap.v" into library work
 Parsing verilog file "global.v" included at line 7.
@@ -158,7 +158,7 @@ Elaborating module <upcounter_lap>.
 Elaborating module <upcounter_tens>.
 
 Elaborating module <upcounter_unit>.
-WARNING:HDLCompiler:1127 - "D:\Programming\EE2230\Lab8_1\upcounter_tens.v" Line 73: Assignment to cout_d1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Programming\EE2230\Lab8_1\upcounter_tens.v" Line 59: Assignment to cout_d1 ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:\Programming\EE2230\Lab8_1\stop_watch.v" Line 104: Assignment to cout_min ignored, since the identifier is never used
 
 Elaborating module <FTSD_decoder>.
@@ -262,8 +262,8 @@ Unit <upcounter_lap> synthesized.
 
 Synthesizing Unit <upcounter_tens>.
     Related source file is "D:\Programming\EE2230\Lab8_1\upcounter_tens.v".
-INFO:Xst:3210 - "D:\Programming\EE2230\Lab8_1\upcounter_tens.v" line 71: Output port <carry> of the instance <dig1> is unconnected or connected to loadless signal.
-    Found 8-bit comparator equal for signal <load_def> created at line 48
+INFO:Xst:3210 - "D:\Programming\EE2230\Lab8_1\upcounter_tens.v" line 57: Output port <carry> of the instance <dig1> is unconnected or connected to loadless signal.
+    Found 8-bit comparator equal for signal <load_def> created at line 34
     Summary:
 	inferred   1 Comparator(s).
 Unit <upcounter_tens> synthesized.
@@ -737,12 +737,12 @@ freq_div/clk_scn_0|    2.010|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.63 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.59 secs
  
 --> 
 
-Total memory usage is 219196 kilobytes
+Total memory usage is 250572 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   23 (   0 filtered)
