@@ -10,7 +10,7 @@ Parsing RTL primitives file [C:/XilinxISE/14.7/ISE_DS/PlanAhead/data/parts/xilin
 Finished parsing RTL primitives file [C:/XilinxISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
 source D:/Programming/EE2230/Lab8_2/pa.fromHdl.tcl
-# create_project -name Lab8_2 -dir "D:/Programming/EE2230/Lab8_2/planAhead_run_2" -part xc6slx16csg324-3
+# create_project -name Lab8_2 -dir "D:/Programming/EE2230/Lab8_2/planAhead_run_5" -part xc6slx16csg324-3
 # set_param project.pinAheadLayout yes
 # set srcset [get_property srcset [current_run -impl]]
 # set_property target_constrs_file "timer.ucf" [current_fileset -constrset]
@@ -79,7 +79,7 @@ Parsing verilog file "global.v" included at line 9. [D:/Programming/EE2230/Lab8_
 Analyzing Verilog file "D:/Programming/EE2230/Lab8_2/downcounter_tens.v" into library work
 Parsing verilog file "global.v" included at line 7. [D:/Programming/EE2230/Lab8_2/downcounter_tens.v:7]
 Analyzing Verilog file "D:/Programming/EE2230/Lab8_2/downcounter_control.v" into library work
-Parsing verilog file "global.v" included at line 21. [D:/Programming/EE2230/Lab8_2/downcounter_control.v:21]
+Parsing verilog file "global.v" included at line 7. [D:/Programming/EE2230/Lab8_2/downcounter_control.v:7]
 Analyzing Verilog file "D:/Programming/EE2230/Lab8_2/cnt_setting.v" into library work
 Analyzing Verilog file "D:/Programming/EE2230/Lab8_2/timer.v" into library work
 Loading clock regions from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
@@ -94,6 +94,6 @@ Finished Parsing UCF File [D:/Programming/EE2230/Lab8_2/timer.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: c99a9ed2
-open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 639.871 ; gain = 178.125
+Phase 0 | Netlist Checksum: 0533fd5b
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 646.523 ; gain = 191.879
 update_compile_order -fileset sim_1
