@@ -65,7 +65,7 @@ LAB5:    xsi_set_current_line(55, ng0);
 
 }
 
-static void Always_60_1(char *t0)
+static void Always_61_1(char *t0)
 {
     char t3[8];
     char *t1;
@@ -99,13 +99,13 @@ LAB0:    t1 = (t0 + 3416U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(61, ng0);
+LAB2:    xsi_set_current_line(62, ng0);
     t2 = (t0 + 3224);
     xsi_process_wait(t2, 1000LL);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(61, ng0);
+LAB4:    xsi_set_current_line(62, ng0);
     t4 = (t0 + 2088);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -159,7 +159,7 @@ LAB10:    t18 = *((unsigned int *)t3);
 
 extern void work_m_00000000002795086810_2243402954_init()
 {
-	static char *pe[] = {(void *)Initial_49_0,(void *)Always_60_1};
+	static char *pe[] = {(void *)Initial_49_0,(void *)Always_61_1};
 	xsi_register_didat("work_m_00000000002795086810_2243402954", "isim/speaker_test_isim_beh.exe.sim/work/m_00000000002795086810_2243402954.didat");
 	xsi_register_executes(pe);
 }

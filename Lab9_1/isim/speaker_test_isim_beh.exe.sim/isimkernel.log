@@ -2,28 +2,9 @@ Command line:
    speaker_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  5377
+     -socket  13402
 
-Thu May 14 19:30:07 2015
+Wed May 20 19:41:01 2015
 
 
- Elaboration Time: 0.140625 sec
-
- Current Memory Usage: 360.378 Meg
-
- Total Signals          : 39
- Total Nets             : 73
- Total Signal Drivers   : 16
- Total Blocks           : 5
- Total Primitive Blocks : 3
- Total Processes        : 28
- Total Traceable Variables  : 35
- Total Scalar Nets and Variables : 230
-Total Line Count : 120
-
- Total Simulation Time: 0.140625 sec
-
- Current Memory Usage: 360.378 Meg
-
-Thu May 14 19:33:15 2015
-
+ Elaboration Time: 0.03125 sec

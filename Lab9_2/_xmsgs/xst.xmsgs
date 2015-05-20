@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Programming\EE2230\Lab9_2\speaker.v" Line 96: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">vol_level</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Programming\EE2230\Lab9_2\speaker.v" Line 133: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">bcd</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Programming\EE2230\Lab9_2\speaker.v" Line 137: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">bcd</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Programming\EE2230\Lab9_2\speaker.v" Line 146: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">display</arg>&gt;. Formal port size is <arg fmt="%d" index="2">19</arg>-bit while actual signal size is <arg fmt="%d" index="1">20</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"D:\Programming\EE2230\Lab9_2\speaker.v" Line 140: Input port <arg fmt="%s" index="1">in3[14]</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">in3</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">ftsd_scn</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">in4</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">ftsd_scn</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab9_2\speaker.v</arg>&quot; line <arg fmt="%s" index="2">47</arg>: Output port &lt;<arg fmt="%s" index="3">clk_cnt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fteq_div</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab9_2\speaker.v</arg>&quot; line <arg fmt="%s" index="2">55</arg>: Output port &lt;<arg fmt="%s" index="3">debounced</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pb_vol_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab9_2\speaker.v</arg>&quot; line <arg fmt="%s" index="2">62</arg>: Output port &lt;<arg fmt="%s" index="3">debounced</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pb_vol_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Programming\EE2230\Lab9_2\speaker.v</arg>&quot; line <arg fmt="%s" index="2">126</arg>: Output port &lt;<arg fmt="%s" index="3">hunds</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ftsd_conv</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">pressed</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ftsd</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_out</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/clk_cnt</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fteq_div/cnt_h_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speaker</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">voice_set/vol_data_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;voice_set/vol_level_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">voice_set/vol_data_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;voice_set/vol_level_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">voice_set/vol_data_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;voice_set/vol_level_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/cnt_4_0&gt; &lt;spk_ctl/clk_128_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/cnt_4_1&gt; &lt;spk_ctl/clk_128_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/clk_128_2&gt; &lt;spk_ctl/audio_bck&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/clk_128_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/clk_128_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/clk_128_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/clk_128_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fteq_div/cnt_l_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;spk_ctl/audio_ws&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">voice_set/vol_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">speaker</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;voice_set/vol_level_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

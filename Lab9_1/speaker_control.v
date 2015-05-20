@@ -29,11 +29,8 @@ module speaker_control(
 	reg audio_ws_next;
 	reg [3:0] audio_bck_cnt;
 	reg [3:0] audio_bck_cnt_next;
-	reg [3:0] cnt_16, cnt_16_next;
-	reg [5:0] cnt_64, cnt_64_next;
-	//wire [] audio_in_left_2c, audio_in_right_2c;
-
-	// data 2 compliment generate
+	reg [1:0] cnt_4, cnt_4_next;
+	reg [6:0] clk_128, clk_128_next;
 
 	// audio_appsel
 	assign audio_appsel = 1'b1;
@@ -43,51 +40,51 @@ module speaker_control(
 
 	// audio_bck
 	always @*
-		if (cnt_16 == 4'd15-1)
+		if (cnt_4 == 2'd3)
 		begin
-			cnt_16_next = 4'd0;
+			cnt_4_next = 2'd0;
 			audio_bck_next = ~audio_bck;
 		end
 		else
 		begin
-			cnt_16_next = cnt_16 + 1'b1;
+			cnt_4_next = cnt_4 + 1'b1;
 			audio_bck_next = audio_bck;
 		end
 
 	always @(posedge clk or posedge rst)
 		if (rst)
 		begin
-			cnt_16 <= 4'b0;
+			cnt_4 <= 2'b0;
 			audio_bck <= 1'b0;
 		end
 		else
 		begin
-			cnt_16 <= cnt_16_next;
+			cnt_4 <= cnt_4_next;
 			audio_bck <= audio_bck_next;
 		end
 
 	// audio_ws
 	always @*
-		if (cnt_64 == 6'd63-1)
+		if (clk_128 == 7'd127)
 		begin
-			cnt_64_next = 6'd0;
+			clk_128_next = 7'd0;
 			audio_ws_next = ~audio_ws;
 		end
 		else
 		begin
-			cnt_64_next = cnt_64 + 1'b1;
+			clk_128_next = clk_128 + 1'b1;
 			audio_ws_next = audio_ws;
 		end
 
 	always @(posedge clk or posedge rst)
 		if (rst)
 		begin
-			cnt_64 <= 6'd0;
+			clk_128 <= 7'd0;
 			audio_ws <= 1'b0;
 		end
 		else
 		begin
-			cnt_64 <= cnt_64_next;
+			clk_128 <= clk_128_next;
 			audio_ws <= audio_ws_next;
 		end
 
@@ -97,7 +94,7 @@ module speaker_control(
 		audio_bck_cnt_next = audio_bck_cnt + 1'b1;
 	end
 
-	always @(posedge clk or posedge rst)
+	always @(posedge audio_bck or posedge rst)
 	begin
 		if (rst)
 		begin

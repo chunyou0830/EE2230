@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   19:21:21 05/14/2015
+// Create Date:   13:20:46 05/20/2015
 // Design Name:   speaker
 // Module Name:   D:/Programming/EE2230/Lab9_1/speaker_test.v
 // Project Name:  Lab9_1
@@ -57,7 +57,9 @@ module speaker_test;
 		// Add stimulus here
 
 	end
-   always 
+   
+	always
 		#1 clk = ~clk;
+	
 endmodule
 
