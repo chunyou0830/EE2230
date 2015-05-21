@@ -1,5 +1,0 @@
-verilog work "speaker_control.v"
-verilog work "sound_setting.v"
-verilog work "frequency_divider.v"
-verilog work "buzzer_control.v"
-verilog work "speaker.v"
