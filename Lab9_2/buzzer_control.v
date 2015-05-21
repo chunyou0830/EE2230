@@ -16,7 +16,7 @@ module buzzer_control(
 	input clk;
 	input rst;
 	input [19:0] note_div;
-	input [15:0] vol_data;
+	input [31:0] vol_data;
 	output [15:0] audio_left, audio_right;
 
 	reg [19:0] clk_cnt_next, clk_cnt;
@@ -50,6 +50,6 @@ module buzzer_control(
 		end
 	end
 
-	assign audio_left = (b_clk == 1'b0) ? 16'h8000 : vol_data;
-	assign audio_right = (b_clk == 1'b0) ? 16'h8000 : vol_data;
+	assign audio_left = (b_clk == 1'b0) ? vol_data[15:0] : vol_data[31:16];
+	assign audio_right = (b_clk == 1'b0) ? vol_data[15:0] : vol_data[31:16];
 endmodule

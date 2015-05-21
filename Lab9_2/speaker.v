@@ -28,7 +28,7 @@ module speaker(
 	wire [1:0] in_vol;
 
 	wire [19:0] note_data;
-	wire [15:0] vol_data;
+	wire [31:0] vol_data;
 	wire [15:0] audio_in_left, audio_in_right;
 	output audio_appsel;
 	output audio_sysclk;
