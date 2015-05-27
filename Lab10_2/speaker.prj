@@ -1,0 +1,8 @@
+verilog work "tone_setting.v"
+verilog work "speaker_control.v"
+verilog work "keypad_scan.v"
+verilog work "FTSD_scan.v"
+verilog work "FTSD_decoder.v"
+verilog work "frequency_divider.v"
+verilog work "buzzer_control.v"
+verilog work "speaker.v"

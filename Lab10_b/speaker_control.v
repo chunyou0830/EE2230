@@ -33,7 +33,7 @@ module speaker_control(
 	reg [6:0] clk_128, clk_128_next;
 
 	// audio_appsel
-	assign audio_appsel = 1'b1;
+	assign audio_appsel = 1'b0;
 
 	// audio_sysclk
 	assign audio_sysclk = clk;

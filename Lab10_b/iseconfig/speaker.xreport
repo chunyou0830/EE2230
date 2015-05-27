@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-26T18:46:24</DateModified>
+  <DateModified>2015-05-27T21:30:42</DateModified>
   <ModuleName>speaker</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-05-27T19:23:30</SummaryTimeStamp>
   <SavedFilePath>D:/Programming/EE2230/Lab10_b/iseconfig/speaker.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Programming/EE2230/Lab10_b\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-26T15:41:15</DateInitialized>

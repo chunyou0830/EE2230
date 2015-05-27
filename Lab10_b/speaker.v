@@ -45,7 +45,7 @@ module speaker(
 
 	// Display
 	wire [11:0] note_disp_left, note_disp_right;
-	wire [14:0] dispA, dispB;
+	wire [14:0] dispA, dispB, dispC, dispD;
 	output [18:0] display;
 
 	// Clock Process
@@ -76,7 +76,7 @@ module speaker(
 		.note_data_left(note_data_left),
 		.note_data_right(note_data_right),
 		.note_disp_left(note_disp_left),
-		.note_disp_right(note_disp_right),
+		.note_disp_right(note_disp_right)
 	);
 
 	// Tone Generator
@@ -100,8 +100,8 @@ module speaker(
 	speaker_control spk_ctl(
 		.clk(clk),
 		.rst(rst),
-		.audio_in_left(audio_in_left),
-		.audio_in_right(audio_in_right),
+		.audio_in_left(audio_tone_left),
+		.audio_in_right(audio_tone_right),
 		.audio_appsel(audio_appsel),
 		.audio_sysclk(audio_sysclk),
 		.audio_bck(audio_bck),
@@ -121,19 +121,19 @@ module speaker(
 	);
 	FTSD_decoder ftsd_dec_C(
 		.bcd(note_disp_right[5:0]),
-		.ftsd(dispB)
+		.ftsd(dispD)
 	);
 
 	FTSD_decoder ftsd_dec_D(
 		.bcd(note_disp_right[11:6]),
-		.ftsd(dispA)
+		.ftsd(dispC)
 	);
 
 	FTSD_scan ftsd_scn(
 		.in1(dispA),
 		.in2(dispB),
-		.in3(15'd0),
-		.in4(15'd0),
+		.in3(dispC),
+		.in4(dispD),
 		.clk(clk_scn),
 		.display(display)
 	);

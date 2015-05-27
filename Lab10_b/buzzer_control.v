@@ -9,8 +9,7 @@ module buzzer_control(
 	rst,
 	note_div,
 	vol_data,
-	audio_left,
-	audio_right
+	audio_tone
 );
 
 	input clk;
