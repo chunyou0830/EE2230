@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name Lab10_b -dir "D:/Programming/EE2230/Lab10_b/planAhead_run_1" -part xc6slx16csg324-3
+create_project -name Lab10_2 -dir "D:/Programming/EE2230/Lab10_2/planAhead_run_1" -part xc6slx16csg324-3
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "speaker.ucf" [current_fileset -constrset]
