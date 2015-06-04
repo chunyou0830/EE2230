@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/RAM.v"
+verilog work "RAM_ctrl.v"
+verilog work "lcd_ctrl.v"
+verilog work "keypad_scan.v"
+verilog work "ct_clkdivider.v"
+verilog work "lcd2.v"

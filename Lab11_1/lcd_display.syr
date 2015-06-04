@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: lcd_display.prj
 
@@ -146,12 +146,13 @@ Unit <lcd_display> synthesized.
 
 Synthesizing Unit <lcd_ctrl>.
     Related source file is "D:\Programming\EE2230\Lab11_1\lcd_ctrl.v".
+    Found 3-bit register for signal <state>.
     Found 8-bit register for signal <counter_y>.
     Found 8-bit register for signal <lcd_data>.
     Found 4-bit register for signal <counter_page>.
     Found 4-bit register for signal <image>.
     Found 14-bit register for signal <idle_counter>.
-    Found 3-bit register for signal <state>.
+    Found 2-bit register for signal <counter>.
     Found 1-bit register for signal <data_request>.
     Found 1-bit register for signal <lcd_di>.
     Found 1-bit register for signal <lcd_en>.
@@ -168,17 +169,18 @@ Synthesizing Unit <lcd_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <idle_counter[13]_GND_2_o_add_42_OUT> created at line 139.
-    Found 8-bit adder for signal <counter_y[7]_GND_2_o_add_54_OUT> created at line 163.
-    Found 4-bit adder for signal <counter_page[3]_GND_2_o_add_55_OUT> created at line 164.
-    Found 4-bit adder for signal <image[3]_GND_2_o_add_61_OUT> created at line 175.
-    Found 4-bit comparator greater for signal <n0005> created at line 101
-    Found 14-bit comparator greater for signal <n0040> created at line 129
-    Found 8-bit comparator greater for signal <counter_y[7]_GND_2_o_LessThan_52_o> created at line 155
+    Found 2-bit adder for signal <counter[1]_GND_2_o_add_3_OUT> created at line 83.
+    Found 14-bit adder for signal <idle_counter[13]_GND_2_o_add_46_OUT> created at line 157.
+    Found 8-bit adder for signal <counter_y[7]_GND_2_o_add_58_OUT> created at line 181.
+    Found 4-bit adder for signal <counter_page[3]_GND_2_o_add_59_OUT> created at line 182.
+    Found 4-bit adder for signal <image[3]_GND_2_o_add_65_OUT> created at line 199.
+    Found 4-bit comparator greater for signal <n0008> created at line 119
+    Found 14-bit comparator greater for signal <n0043> created at line 147
+    Found 8-bit comparator greater for signal <counter_y[7]_GND_2_o_LessThan_56_o> created at line 173
     WARNING:Xst:2404 -  FFs/Latches <lcd_rw<0:0>> (without init value) have a constant value of 0 in block <lcd_ctrl>.
     Summary:
-	inferred   4 Adder/Subtractor(s).
-	inferred  41 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
 	inferred   3 Comparator(s).
 	inferred  32 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -249,8 +251,9 @@ Unit <clock_divider> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 16
+# Adders/Subtractors                                   : 17
  14-bit adder                                          : 1
+ 2-bit adder                                           : 1
  4-bit adder                                           : 3
  4-bit subtractor                                      : 1
  6-bit adder                                           : 1
@@ -259,9 +262,10 @@ Macro Statistics
  8-bit subtractor                                      : 1
  9-bit adder                                           : 1
  9-bit subtractor                                      : 6
-# Registers                                            : 15
+# Registers                                            : 16
  1-bit register                                        : 5
  14-bit register                                       : 1
+ 2-bit register                                        : 1
  4-bit register                                        : 3
  512-bit register                                      : 1
  6-bit register                                        : 1
@@ -355,6 +359,7 @@ Unit <clock_divider> synthesized (advanced).
 
 Synthesizing (advanced) Unit <lcd_ctrl>.
 The following registers are absorbed into counter <idle_counter>: 1 register on signal <idle_counter>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <lcd_ctrl> synthesized (advanced).
 
 Synthesizing (advanced) Unit <rom_ctrl>.
@@ -373,8 +378,9 @@ Macro Statistics
  8-bit adder                                           : 1
  8-bit subtractor                                      : 1
  9-bit subtractor                                      : 6
-# Counters                                             : 4
+# Counters                                             : 5
  14-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
  4-bit up counter                                      : 1
  6-bit up counter                                      : 1
  9-bit up counter                                      : 1
@@ -482,7 +488,6 @@ Optimizing FSM <U_romctrl/FSM_1> on signal <state[1:2]> with user encoding.
 Optimizing unit <lcd_display> ...
 
 Optimizing unit <lcd_ctrl> ...
-WARNING:Xst:1710 - FF/Latch <counter_y_7> (without init value) has a constant value of 0 in block <lcd_ctrl>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <rom_ctrl> ...
 WARNING:Xst:1710 - FF/Latch <U_LCDctrl/counter_y_7> (without init value) has a constant value of 0 in block <lcd_display>. This FF/Latch will be trimmed during the optimization process.
@@ -490,6 +495,7 @@ WARNING:Xst:1710 - FF/Latch <U_LCDctrl/counter_y_7> (without init value) has a c
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block lcd_display, actual ratio is 12.
+FlipFlop U_LCDctrl/counter_page_3 has been replicated 1 time(s)
 FlipFlop U_LCDctrl/counter_y_0 has been replicated 1 time(s)
 FlipFlop U_LCDctrl/counter_y_6 has been replicated 1 time(s)
 FlipFlop U_romctrl/counter_byte_1 has been replicated 5 time(s)
@@ -500,8 +506,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 593
- Flip-Flops                                            : 593
+# Registers                                            : 596
+ Flip-Flops                                            : 596
 
 =========================================================================
 
@@ -524,22 +530,21 @@ Top Level Output File Name         : lcd_display.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 902
+# BELS                             : 909
 #      GND                         : 2
 #      INV                         : 4
-#      LUT1                        : 1
-#      LUT2                        : 15
-#      LUT3                        : 19
-#      LUT4                        : 36
-#      LUT5                        : 25
-#      LUT6                        : 753
+#      LUT2                        : 16
+#      LUT3                        : 28
+#      LUT4                        : 34
+#      LUT5                        : 23
+#      LUT6                        : 752
 #      MUXCY                       : 21
-#      MUXF7                       : 1
+#      MUXF7                       : 4
 #      VCC                         : 2
 #      XORCY                       : 23
-# FlipFlops/Latches                : 593
-#      FDC                         : 38
-#      FDCE                        : 555
+# FlipFlops/Latches                : 596
+#      FDC                         : 37
+#      FDCE                        : 559
 # RAMS                             : 4
 #      RAMB16BWER                  : 4
 # Clock Buffers                    : 2
@@ -556,15 +561,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             593  out of  18224     3%  
- Number of Slice LUTs:                  853  out of   9112     9%  
-    Number used as Logic:               853  out of   9112     9%  
+ Number of Slice Registers:             596  out of  18224     3%  
+ Number of Slice LUTs:                  857  out of   9112     9%  
+    Number used as Logic:               857  out of   9112     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    858
-   Number with an unused Flip Flop:     265  out of    858    30%  
-   Number with an unused LUT:             5  out of    858     0%  
-   Number of fully used LUT-FF pairs:   588  out of    858    68%  
+ Number of LUT Flip Flop pairs used:    863
+   Number with an unused Flip Flop:     267  out of    863    30%  
+   Number with an unused LUT:             6  out of    863     0%  
+   Number of fully used LUT-FF pairs:   590  out of    863    68%  
    Number of unique control sets:         9
 
 IO Utilization: 
@@ -598,7 +603,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)                                                                                                                 | Load  |
 -----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
 clk                                | BUFGP                                                                                                                                 | 10    |
-clk50k/clk_div                     | BUFG                                                                                                                                  | 587   |
+clk50k/clk_div                     | BUFG                                                                                                                                  | 590   |
 U_romctrl/R1/N1                    | NONE(U_romctrl/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 4     |
 -----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -611,9 +616,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.930ns (Maximum Frequency: 168.640MHz)
-   Minimum input arrival time before clock: 4.583ns
-   Maximum output required time after clock: 4.309ns
+   Minimum period: 5.912ns (Maximum Frequency: 169.149MHz)
+   Minimum input arrival time before clock: 4.584ns
+   Maximum output required time after clock: 4.252ns
    Maximum combinational path delay: 4.409ns
 
 Timing Details:
@@ -622,10 +627,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.199ns (frequency: 238.152MHz)
-  Total number of paths / destination ports: 490 / 10
+  Clock period: 4.213ns (frequency: 237.335MHz)
+  Total number of paths / destination ports: 541 / 10
 -------------------------------------------------------------------------
-Delay:               4.199ns (Levels of Logic = 12)
+Delay:               4.213ns (Levels of Logic = 12)
   Source:            clk50k/count_1 (FF)
   Destination:       clk50k/count_8 (FF)
   Source Clock:      clk rising
@@ -636,8 +641,8 @@ Delay:               4.199ns (Levels of Logic = 12)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              2   0.447   0.864  clk50k/count_1 (clk50k/count_1)
-     LUT4:I0->O            5   0.203   0.715  clk50k/GND_5_o_GND_5_o_equal_1_o<8>_SW0 (N2)
-     LUT6:I5->O            6   0.205   0.973  clk50k/GND_5_o_GND_5_o_equal_1_o<8> (clk50k/GND_5_o_GND_5_o_equal_1_o)
+     LUT4:I0->O            2   0.203   0.617  clk50k/GND_5_o_GND_5_o_equal_1_o<8>_SW0 (N2)
+     LUT6:I5->O           10   0.205   1.085  clk50k/GND_5_o_GND_5_o_equal_1_o<8> (clk50k/GND_5_o_GND_5_o_equal_1_o)
      LUT3:I0->O            1   0.205   0.000  clk50k/Mcount_count_lut<0> (clk50k/Mcount_count_lut<0>)
      MUXCY:S->O            1   0.172   0.000  clk50k/Mcount_count_cy<0> (clk50k/Mcount_count_cy<0>)
      MUXCY:CI->O           1   0.019   0.000  clk50k/Mcount_count_cy<1> (clk50k/Mcount_count_cy<1>)
@@ -650,15 +655,15 @@ Delay:               4.199ns (Levels of Logic = 12)
      XORCY:CI->O           1   0.180   0.000  clk50k/Mcount_count_xor<8> (clk50k/Mcount_count8)
      FDC:D                     0.102          clk50k/count_8
     ----------------------------------------
-    Total                      4.199ns (1.647ns logic, 2.552ns route)
-                                       (39.2% logic, 60.8% route)
+    Total                      4.213ns (1.647ns logic, 2.566ns route)
+                                       (39.1% logic, 60.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50k/clk_div'
-  Clock period: 5.930ns (frequency: 168.640MHz)
-  Total number of paths / destination ports: 8611 / 1178
+  Clock period: 5.912ns (frequency: 169.149MHz)
+  Total number of paths / destination ports: 9090 / 1185
 -------------------------------------------------------------------------
-Delay:               5.930ns (Levels of Logic = 5)
+Delay:               5.912ns (Levels of Logic = 5)
   Source:            U_LCDctrl/counter_y_3 (FF)
   Destination:       U_LCDctrl/counter_y_0 (FF)
   Source Clock:      clk50k/clk_div rising
@@ -668,22 +673,22 @@ Delay:               5.930ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.447   1.201  U_LCDctrl/counter_y_3 (U_LCDctrl/counter_y_3)
-     LUT6:I1->O           14   0.203   0.958  U_LCDctrl/_n0337_inv11 (U_LCDctrl/_n0337_inv1)
-     LUT3:I2->O            2   0.205   0.845  U_LCDctrl/counter_page[3]_counter_y[7]_AND_3_o1 (U_LCDctrl/counter_page[3]_counter_y[7]_AND_3_o)
-     LUT6:I3->O            7   0.205   0.774  U_LCDctrl/_n0244_inv3 (U_LCDctrl/_n0244_inv3)
-     LUT5:I4->O            1   0.205   0.580  U_LCDctrl/_n0244_inv4_rstpot (U_LCDctrl/_n0244_inv4_rstpot)
-     LUT3:I2->O            2   0.205   0.000  U_LCDctrl/counter_y_0_dpot (U_LCDctrl/counter_y_0_dpot)
-     FDCE:D                    0.102          U_LCDctrl/counter_y_0
+     FDCE:C->Q             9   0.447   1.174  U_LCDctrl/counter_y_3 (U_LCDctrl/counter_y_3)
+     LUT6:I1->O           16   0.203   1.005  U_LCDctrl/counter_y[7]_GND_2_o_equal_17_o<7>11 (U_LCDctrl/counter_y[7]_GND_2_o_equal_17_o<7>1)
+     LUT6:I5->O            1   0.205   0.808  U_LCDctrl/_n0256_inv3_SW0 (N36)
+     LUT6:I3->O            7   0.205   0.774  U_LCDctrl/_n0256_inv3 (U_LCDctrl/_n0256_inv3)
+     LUT6:I5->O            1   0.205   0.580  U_LCDctrl/_n0256_inv4 (U_LCDctrl/_n0256_inv)
+     LUT3:I2->O            2   0.205   0.000  U_LCDctrl/counter_y_0_rstpot (U_LCDctrl/counter_y_0_rstpot)
+     FDC:D                     0.102          U_LCDctrl/counter_y_0
     ----------------------------------------
-    Total                      5.930ns (1.572ns logic, 4.358ns route)
-                                       (26.5% logic, 73.5% route)
+    Total                      5.912ns (1.572ns logic, 4.340ns route)
+                                       (26.6% logic, 73.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              4.583ns (Levels of Logic = 2)
+Offset:              4.584ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       clk50k/count_0 (FF)
   Destination Clock: clk rising
@@ -693,17 +698,17 @@ Offset:              4.583ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            593   0.206   2.109  clk50k/rst_n_inv1_INV_0 (U_LCDctrl/rst_n_inv)
+     INV:I->O            596   0.206   2.110  clk50k/rst_n_inv1_INV_0 (U_LCDctrl/rst_n_inv)
      FDC:CLR                   0.430          clk50k/count_0
     ----------------------------------------
-    Total                      4.583ns (1.858ns logic, 2.725ns route)
+    Total                      4.584ns (1.858ns logic, 2.726ns route)
                                        (40.5% logic, 59.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50k/clk_div'
-  Total number of paths / destination ports: 583 / 583
+  Total number of paths / destination ports: 586 / 586
 -------------------------------------------------------------------------
-Offset:              4.583ns (Levels of Logic = 2)
+Offset:              4.584ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
   Destination:       U_LCDctrl/state_FSM_FFd1 (FF)
   Destination Clock: clk50k/clk_div rising
@@ -713,17 +718,17 @@ Offset:              4.583ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            593   0.206   2.109  clk50k/rst_n_inv1_INV_0 (U_LCDctrl/rst_n_inv)
+     INV:I->O            596   0.206   2.110  clk50k/rst_n_inv1_INV_0 (U_LCDctrl/rst_n_inv)
      FDC:CLR                   0.430          U_LCDctrl/lcd_en
     ----------------------------------------
-    Total                      4.583ns (1.858ns logic, 2.725ns route)
+    Total                      4.584ns (1.858ns logic, 2.726ns route)
                                        (40.5% logic, 59.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50k/clk_div'
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Offset:              4.309ns (Levels of Logic = 1)
+Offset:              4.252ns (Levels of Logic = 1)
   Source:            U_LCDctrl/lcd_en (FF)
   Destination:       lcd_e (PAD)
   Source Clock:      clk50k/clk_div rising
@@ -732,11 +737,11 @@ Offset:              4.309ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             32   0.447   1.291  U_LCDctrl/lcd_en (U_LCDctrl/lcd_en)
+     FDC:C->Q             28   0.447   1.234  U_LCDctrl/lcd_en (U_LCDctrl/lcd_en)
      OBUF:I->O                 2.571          lcd_e_OBUF (lcd_e)
     ----------------------------------------
-    Total                      4.309ns (3.018ns logic, 1.291ns route)
-                                       (70.0% logic, 30.0% route)
+    Total                      4.252ns (3.018ns logic, 1.234ns route)
+                                       (71.0% logic, 29.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -766,7 +771,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.199|         |         |         |
+clk            |    4.213|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50k/clk_div
@@ -774,20 +779,20 @@ Clock to Setup on destination clock clk50k/clk_div
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50k/clk_div |    5.930|         |         |         |
+clk50k/clk_div |    5.912|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 37.00 secs
-Total CPU time to Xst completion: 37.50 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 26.95 secs
  
 --> 
 
-Total memory usage is 339184 kilobytes
+Total memory usage is 307704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

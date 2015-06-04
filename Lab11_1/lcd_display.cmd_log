@@ -17,3 +17,40 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
 bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display.ngc lcd_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display_map.ncd lcd_display.ngd lcd_display.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display.ngc lcd_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display_map.ncd lcd_display.ngd lcd_display.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display.ngc lcd_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display_map.ncd lcd_display.ngd lcd_display.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display.ngc lcd_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display_map.ncd lcd_display.ngd lcd_display.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display.ngc lcd_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display_map.ncd lcd_display.ngd lcd_display.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Lab11_1/lcd_display.xst" -ofn "D:/Programming/EE2230/Lab11_1/lcd_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_display.ucf -p xc6slx16-csg324-3 lcd_display.ngc lcd_display.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_display_map.ncd lcd_display.ngd lcd_display.pcf 
+par -w -intstyle ise -ol high -mt off lcd_display_map.ncd lcd_display.ncd lcd_display.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd_display.twx lcd_display.ncd -o lcd_display.twr lcd_display.pcf -ucf lcd_display.ucf 
+bitgen -intstyle ise -f lcd_display.ut lcd_display.ncd 

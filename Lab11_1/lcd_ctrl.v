@@ -70,6 +70,24 @@ assign lcd_cs = 2'b11;
 // counter_y: counter for the y axis
 // counter_page: counter for the pages
 
+
+reg [1:0] counter;
+always @(posedge clk or negedge rst_n)
+begin
+	if(~rst_n)
+	begin
+	counter <= 2'd0;
+	end
+	else if(image == 4'd8)
+	begin
+	counter <= counter + 1'b1;
+	end
+	else
+	begin
+	counter <= counter;
+	end
+end
+
 // FSM for LCD
 always @*
 begin
@@ -168,8 +186,19 @@ begin
           counter_y_next = 7'd0;
           if (counter_page==4'd8)
           begin
+				if(image == 4'd8 && counter == 2'b11)
+				begin
+				image_next = 4'd0;
+				end
+				else if(image == 4'd8)
+				begin
+				image_next = image_next;
+				end
+				else
+				begin
             image_next = image + 1'b1; // change to next image
-            state_next = `LCD_IDLE;
+            end
+				state_next = `LCD_IDLE;
           end
           else
             state_next = `REQUEST_DATA;
