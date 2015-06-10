@@ -1,30 +1,57 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name Lab12_1 -dir "D:/Programming/EE2230/Lab12_1/planAhead_run_1" -part xc6slx16csg324-3
+create_project -name Lab12_1 -dir "D:/Programming/EE2230/Lab12_1/planAhead_run_2" -part xc6slx16csg324-3
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
-set_property target_constrs_file "lcd2.ucf" [current_fileset -constrset]
+set_property target_constrs_file "electronic_clock.ucf" [current_fileset -constrset]
 add_files [list {ipcore_dir/RAM.ngc}]
+set hdlfile [add_files [list {add3.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {upcounter_unit.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {LCD_decoder.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
 set hdlfile [add_files [list {ipcore_dir/RAM.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
-set hdlfile [add_files [list {RAM_ctrl.v}]]
+set hdlfile [add_files [list {BIN_converter_BCD.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
-set hdlfile [add_files [list {lcd_ctrl.v}]]
+set hdlfile [add_files [list {upcounter_thousands.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
-set hdlfile [add_files [list {keypad_scan.v}]]
+set hdlfile [add_files [list {upcounter_tens.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {RAM_control.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {LCD_control.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {frequency_divider.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {display_control.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set hdlfile [add_files [list {date_setting.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
 set hdlfile [add_files [list {ct_clkdivider.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
-set hdlfile [add_files [list {lcd2.v}]]
+set hdlfile [add_files [list {clock_generator.v}]]
 set_property file_type Verilog $hdlfile
 set_property library work $hdlfile
-set_property top lcd2 $srcset
-add_files [list {lcd2.ucf}] -fileset [get_property constrset [current_run]]
+set hdlfile [add_files [list {electronic_clock.v}]]
+set_property file_type Verilog $hdlfile
+set_property library work $hdlfile
+set_property top electronic_clock $srcset
+add_files [list {electronic_clock.ucf}] -fileset [get_property constrset [current_run]]
 add_files [list {ipcore_dir/RAM.ncf}] -fileset [get_property constrset [current_run]]
 open_rtl_design -part xc6slx16csg324-3

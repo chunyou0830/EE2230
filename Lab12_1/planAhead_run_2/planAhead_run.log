@@ -1,0 +1,127 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/XilinxISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/XilinxISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Programming/EE2230/Lab12_1/pa.fromHdl.tcl
+# create_project -name Lab12_1 -dir "D:/Programming/EE2230/Lab12_1/planAhead_run_2" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "electronic_clock.ucf" [current_fileset -constrset]
+Adding file 'D:/Programming/EE2230/Lab12_1/electronic_clock.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/RAM.ngc}]
+# set hdlfile [add_files [list {add3.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {upcounter_unit.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {LCD_decoder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/RAM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BIN_converter_BCD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {upcounter_thousands.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {upcounter_tens.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {RAM_control.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {LCD_control.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {frequency_divider.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {display_control.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {date_setting.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ct_clkdivider.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clock_generator.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {electronic_clock.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top electronic_clock $srcset
+# add_files [list {electronic_clock.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RAM.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "C:/XilinxISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/add3.v" into library work
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/upcounter_unit.v" into library work
+Parsing verilog file "global.v" included at line 7. [D:/Programming/EE2230/Lab12_1/upcounter_unit.v:7]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/LCD_decoder.v" into library work
+Parsing verilog file "global.v" included at line 7. [D:/Programming/EE2230/Lab12_1/LCD_decoder.v:7]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/ipcore_dir/RAM.v" into library work
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/BIN_converter_BCD.v" into library work
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/upcounter_thousands.v" into library work
+Parsing verilog file "global.v" included at line 21. [D:/Programming/EE2230/Lab12_1/upcounter_thousands.v:21]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/upcounter_tens.v" into library work
+Parsing verilog file "global.v" included at line 21. [D:/Programming/EE2230/Lab12_1/upcounter_tens.v:21]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/RAM_control.v" into library work
+Parsing verilog file "global.v" included at line 10. [D:/Programming/EE2230/Lab12_1/RAM_control.v:10]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/LCD_control.v" into library work
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/frequency_divider.v" into library work
+Parsing verilog file "global.v" included at line 7. [D:/Programming/EE2230/Lab12_1/frequency_divider.v:7]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/display_control.v" into library work
+Parsing verilog file "global.v" included at line 21. [D:/Programming/EE2230/Lab12_1/display_control.v:21]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/date_setting.v" into library work
+Parsing verilog file "global.v" included at line 21. [D:/Programming/EE2230/Lab12_1/date_setting.v:21]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/ct_clkdivider.v" into library work
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/clock_generator.v" into library work
+Parsing verilog file "global.v" included at line 9. [D:/Programming/EE2230/Lab12_1/clock_generator.v:9]
+Analyzing Verilog file "D:/Programming/EE2230/Lab12_1/electronic_clock.v" into library work
+Parsing verilog file "global.v" included at line 7. [D:/Programming/EE2230/Lab12_1/electronic_clock.v:7]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM.edif ...
+ngc2edif: Total memory usage is 76804 kilobytes
+
+Reading core file 'D:/Programming/EE2230/Lab12_1/ipcore_dir/RAM.ngc' for (cell view 'RAM', library 'work', file 'RAM.v')
+Parsing EDIF File [./.Xil/PlanAhead-12852-CY-PC/ngc2edif/RAM.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-12852-CY-PC/ngc2edif/RAM.edif]
+Loading clock regions from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/XilinxISE/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Programming/EE2230/Lab12_1/electronic_clock.ucf]
+Finished Parsing UCF File [D:/Programming/EE2230/Lab12_1/electronic_clock.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 1bff6b49
+open_rtl_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 668.086 ; gain = 205.352
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Jun 10 20:50:34 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=D:\Programming\EE2230\Lab12_1\lcd2.ncd
-OUTFILE=D:\Programming\EE2230\Lab12_1\lcd2.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=D:\Programming\EE2230\Lab12_1
-LICENSE=WebPack
-USER_INFO=210913348_0_0_143
