@@ -7,20 +7,17 @@
 // E-mail    : cthuang@cs.nthu.edu.tw
 // Revision  : 2
 // Date      : 2011/04/13
-module RAM_ctrl (
+`include "global.v"
+module RAM_control (
     input clk,
     input rst_n,
     input change,
-    input [15:0] key,
     input en,
+    input [95:0] input_data,
     output reg [7:0] data_out,
     output reg data_valid
 );
 
-    parameter mark_1  = 256'hffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff;
-    parameter mark_2  = 256'h0000_0000_0ff0_0ff0_3c3c_3c3c_00f0_00f0_03c0_03c0_0f00_0f00_3ffc_3ffc_0000_0000;
-    parameter mark_3  = 256'h0000_0000_3ffc_3ffc_00f0_00f0_03c0_03c0_00f0_00f0_3c3c_3c3c_0ff0_0ff0_0000_0000;
-    parameter mark_4  = 256'h0000_0000_00f0_00f0_03f0_03f0_0ff0_0ff0_3cf0_3cf0_3ffc_3ffc_00f0_00f0_0000_0000;
     parameter IDLE  = 2'd0;
     parameter WRITE = 2'd1;
     parameter GETDATA = 2'd2;
@@ -29,7 +26,9 @@ module RAM_ctrl (
     reg [5:0] addr, addr_next;
     reg [5:0] counter_word, counter_word_next;
     wire [63:0] data_out_64;
-    reg [63:0] data_in;
+    reg [95:0] data_in;
+    reg [23:0] trans;
+    wire [255:0] mark_1, mark_2, mark_3, mark_4;
     wire [15:0] in_temp0, in_temp1, in_temp2, in_temp3;
     reg [1:0] cnt, cnt_next;  //count mark row
     reg [511:0] mem, mem_next;
@@ -39,13 +38,52 @@ module RAM_ctrl (
     reg data_valid_next;
     reg wen, wen_next;
     reg temp_change, temp_change_next;
- 
-    assign in_temp0 = 16'b1011111111111111/*key[15-(cnt*4)] == 1'b0 ? 16'd0 : mark_1[(240-((addr%16)*16))+:16]*/;
-    assign in_temp1 = /*key[14-(cnt*4)] == 1'b0 ? 16'd0 :*/ mark_2[(240-((addr%16)*16))+:16];
-    assign in_temp2 = /*key[13-(cnt*4)] == 1'b0 ? 16'd0 :*/ mark_3[(240-((addr%16)*16))+:16];
-    assign in_temp3 = /*key[12-(cnt*4)] == 1'b0 ? 16'd0 :*/ mark_4[(240-((addr%16)*16))+:16];
+    
+    always @*
+    begin
+        case(cnt)
+            2'd0:
+            begin
+                trans = input_data[95:72];
+            end
+            2'd1:
+            begin
+                trans = input_data[71:48];
+            end
+            2'd2:
+            begin
+                trans = input_data[47:24];
+            end
+            2'd3:
+            begin
+                trans = input_data[23:0];
+            end
+        endcase
+    end
 
-    RAM R1(
+    LCD_decoder lcd_dec_1(
+        .bcd(trans[23:18]),
+        .mark(mark_1)
+    );
+    LCD_decoder lcd_dec_2(
+        .bcd(trans[17:12]),
+        .mark(mark_2)
+    );
+    LCD_decoder lcd_dec_3(
+        .bcd(trans[11:6]),
+        .mark(mark_3)
+    );
+    LCD_decoder lcd_dec_4(
+        .bcd(trans[5:0]),
+        .mark(mark_4)
+    );
+
+    assign in_temp0 = mark_1[(240-((addr%16)*16))+:16];
+    assign in_temp1 = mark_2[(240-((addr%16)*16))+:16];
+    assign in_temp2 = mark_3[(240-((addr%16)*16))+:16];
+    assign in_temp3 = mark_4[(240-((addr%16)*16))+:16];
+
+    RAM RAM(
         .clka(clk),
         .wea(wen),
         .addra(addr),

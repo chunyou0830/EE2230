@@ -1,6 +1,6 @@
 INTSTYLE=ise
-INFILE=D:\Programming\EE2230\Lab12_1\lcd2.ncd
-OUTFILE=D:\Programming\EE2230\Lab12_1\lcd2.bit
+INFILE=D:\Programming\EE2230\Lab12_1\electronic_clock.ncd
+OUTFILE=D:\Programming\EE2230\Lab12_1\electronic_clock.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
 WORKINGDIR=D:\Programming\EE2230\Lab12_1

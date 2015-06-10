@@ -7,7 +7,7 @@
 // E-mail    : cthuang@cs.nthu.edu.tw
 // Revision  : 2
 // Date      : 2011/04/13
-module lcd_ctrl (
+module LCD_control (
   input wire clk,
   input wire rst_n,
   input wire [7:0] data,    // memory value  
