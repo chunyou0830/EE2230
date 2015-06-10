@@ -64,3 +64,10 @@ NET "data_ack"        LOC = "H6"	;
 #NET "AUDIO_DATA"   LOC = "L16"; ##DATAI
 #NET "AUDIO_CLK"   LOC = "H17"; ##SYSCLK
 #NET "AUDIO_APPSEL" LOC = "H18"; ##APPSEL
+
+
+NET "led[0]" LOC = "K4";
+NET "led[1]" LOC = "K3";
+NET "led[2]" LOC = "L5";
+NET "led[3]" LOC = "K5";
+NET "led[4]" LOC = "H4";

@@ -1,5 +1,0 @@
-verilog work "ipcore_dir/ROM.v"
-verilog work "rom_ctrl.v"
-verilog work "lcd_ctrl.v"
-verilog work "ct_clkdivider.v"
-verilog work "lcd_display.v"

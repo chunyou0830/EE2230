@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-06-04T17:26:48</DateModified>
+  <DateModified>2015-06-05T22:08:05</DateModified>
   <ModuleName>lcd_display</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-06-05T21:08:38</SummaryTimeStamp>
   <SavedFilePath>D:/Programming/EE2230/Lab11_1/iseconfig/lcd_display.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Programming/EE2230/Lab11_1\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-28T16:28:01</DateInitialized>

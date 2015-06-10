@@ -6,10 +6,12 @@
 `define LCD_IDLE         3'b010
 `define REQUEST_DATA 3'b011
 `define READ_DATA    3'b100
+`define PAUSE 3'b111
 `define ENABLED  1'b1
 `define DISABLED 1'b0
 
 module lcd_ctrl(
+    clk_cnt,
   clk, // LCD controller clock
   rst_n, // active low reset
   data_ack, // data re-arrangement buffer ready indicator
@@ -21,9 +23,10 @@ module lcd_ctrl(
   lcd_cs, // LCD frame select
   lcd_data, // LCD data
   addr, // Address for each picture
-  data_request // request for the memory data
+  data_request, // request for the memory data
+  counter
 );
-
+input clk_cnt;
 input clk; // LCD controller clock
 input rst_n; // active low reset
 input data_ack; // data re-arrangement buffer ready indicator
@@ -71,20 +74,16 @@ assign lcd_cs = 2'b11;
 // counter_page: counter for the pages
 
 
-reg [1:0] counter;
-always @(posedge clk or negedge rst_n)
+output reg [4:0] counter;
+always @(posedge clk_cnt)
 begin
-	if(~rst_n)
+if(state == `PAUSE)
 	begin
-	counter <= 2'd0;
-	end
-	else if(image == 4'd8)
-	begin
-	counter <= counter + 1'b1;
+	   counter <= counter + 5'd1;
 	end
 	else
 	begin
-	counter <= counter;
+	   counter <= 5'd0;
 	end
 end
 
@@ -168,8 +167,8 @@ begin
           {lcd_di_next,lcd_rw_next,lcd_data_next} = {7'b0_0_10111, counter_page[2:0]};
         end
       end
-      `READ_DATA:
-      begin
+    `READ_DATA:
+    begin
         if (counter_y<7'd63)
         begin
           {lcd_di_next,lcd_rw_next,lcd_data_next} = {2'b1_0,data};
@@ -183,27 +182,37 @@ begin
         end
         else if (counter_y==7'd64)
         begin
-          counter_y_next = 7'd0;
-          if (counter_page==4'd8)
-          begin
-				if(image == 4'd8 && counter == 2'b11)
+            counter_y_next = 7'd0;
+            if (counter_page==4'd8)
+            begin
+				if(image == 4'd8)
 				begin
-				image_next = 4'd0;
-				end
-				else if(image == 4'd8)
-				begin
-				image_next = image_next;
+                  image_next = image;
+                  state_next = `PAUSE;
 				end
 				else
 				begin
-            image_next = image + 1'b1; // change to next image
+                    image_next = image + 1'b1; // change to next image
+                    state_next = `LCD_IDLE;
+                end
             end
-				state_next = `LCD_IDLE;
-          end
-          else
-            state_next = `REQUEST_DATA;
+            else
+                state_next = `REQUEST_DATA;
         end
-      end
+    end
+    `PAUSE:
+    begin
+        if (counter == 5'd2)
+        begin
+            image_next = 4'd0;
+            state_next = `LCD_IDLE;
+        end
+        else
+        begin
+            image_next = image;
+            state_next = `PAUSE;
+        end
+    end
     endcase
   end
 end

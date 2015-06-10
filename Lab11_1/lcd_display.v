@@ -28,7 +28,8 @@ module lcd_display(
   lcd_rw, // LCD read/write control
   lcd_di, // LCD data/instruction
   lcd_d, // LCD data
-  lcd_e // LCD enable
+  lcd_e, // LCD enable
+  led
 );
 
 input clk; // system clock
@@ -39,6 +40,7 @@ output lcd_rw; // LCD read/write control
 output lcd_di; // LCD data/instruction
 output [7:0] lcd_d; // LCD data
 output lcd_e; // LCD enable
+output [4:0] led;
 
 wire clk_50k; // Divided 50k clock
 //wire data_ack; //data re-arrangement buffer ready indicator
@@ -47,8 +49,17 @@ wire [7:0] data; // byte data transfer from buffer
 wire [6:0] addr; // Address for each picture
 //wire data_request; // request for the memory data
 output data_request; // request for the memory data
+wire clk_cnt;
+
+frequency_divider(
+  .clk_cnt(clk_cnt),
+  .clk_scn(),
+  .clk(clk),
+  .rst(~rst_n)
+);
 
 lcd_ctrl U_LCDctrl(
+  .clk_cnt(clk_cnt),
   .clk(clk_50k), // LCD controller clock
   .rst_n(rst_n), // active low reset
   .data_ack(data_ack), // data re-arrangement buffer ready indicator
@@ -60,7 +71,8 @@ lcd_ctrl U_LCDctrl(
   .lcd_cs(lcd_cs), // LCD frame select
   .lcd_data(lcd_d), // LCD data
   .addr(addr), // Address for each picture
-  .data_request(data_request) // request for the memory data
+  .data_request(data_request), // request for the memory data
+  .counter(led)
 );
 
 rom_ctrl U_romctrl(
