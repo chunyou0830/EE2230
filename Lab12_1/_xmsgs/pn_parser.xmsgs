@@ -8,6 +8,12 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/BIN_converter_BCD.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/LCD_control.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/LCD_decoder.v&quot; into library work</arg>
 </msg>
 
@@ -22,11 +28,17 @@
 </arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/add3.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/clock_generator.v&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Programming/EE2230/Lab12_1/clock_generator.v</arg>&quot; Line <arg fmt="%d" index="2">9</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Programming/EE2230/Lab12_1/global.v&apos; in file &quot;D:/Programming/EE2230/Lab12_1/clock_generator.v&quot; line 9
 </arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/ct_clkdivider.v&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Programming/EE2230/Lab12_1/date_setting.v&quot; into library work</arg>
