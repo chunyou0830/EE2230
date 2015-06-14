@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Jun 13 18:57:34 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "row_scn<0>" LOCATE = SITE "K2" LEVEL 1;
+COMP "row_scn<1>" LOCATE = SITE "K1" LEVEL 1;
+COMP "row_scn<2>" LOCATE = SITE "L4" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "K4" LEVEL 1;
+COMP "row_scn<3>" LOCATE = SITE "L3" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "K3" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "dip<0>" LOCATE = SITE "T1" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "K5" LEVEL 1;
+COMP "pb_in_switch" LOCATE = SITE "U1" LEVEL 1;
+COMP "dip<1>" LOCATE = SITE "P2" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "H4" LEVEL 1;
+COMP "dip<2>" LOCATE = SITE "P1" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "H3" LEVEL 1;
+COMP "dip<3>" LOCATE = SITE "L2" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "L7" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "K6" LEVEL 1;
+COMP "led<8>" LOCATE = SITE "G3" LEVEL 1;
+COMP "led<9>" LOCATE = SITE "G1" LEVEL 1;
+COMP "col_in<0>" LOCATE = SITE "J3" LEVEL 1;
+COMP "pb_in_rst" LOCATE = SITE "T2" LEVEL 1;
+COMP "col_in<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "col_in<2>" LOCATE = SITE "H2" LEVEL 1;
+COMP "col_in<3>" LOCATE = SITE "H1" LEVEL 1;
+COMP "led<10>" LOCATE = SITE "J7" LEVEL 1;
+COMP "led<11>" LOCATE = SITE "J6" LEVEL 1;
+COMP "led<12>" LOCATE = SITE "F2" LEVEL 1;
+COMP "led<13>" LOCATE = SITE "F1" LEVEL 1;
+COMP "led<14>" LOCATE = SITE "H6" LEVEL 1;
+SCHEMATIC END;
+

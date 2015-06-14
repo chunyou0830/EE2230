@@ -1,0 +1,4 @@
+verilog work "keypad_scan.v"
+verilog work "ipcore_dir/RAM_GAME.v"
+verilog work "frequency_divider.v"
+verilog work "RAM_GAME_controll.v"
