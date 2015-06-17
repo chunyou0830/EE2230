@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc J3_Pin_Test.ucf -p xc6slx16-csg324-3 RAM_GAME_controll.ngc RAM_GAME_controll.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_GAME_controll_map.ncd RAM_GAME_controll.ngd RAM_GAME_controll.pcf 
+par -w -intstyle ise -ol high -mt off RAM_GAME_controll_map.ncd RAM_GAME_controll.ncd RAM_GAME_controll.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RAM_GAME_controll.twx RAM_GAME_controll.ncd -o RAM_GAME_controll.twr RAM_GAME_controll.pcf -ucf J3_Pin_Test.ucf 
+bitgen -intstyle ise -f RAM_GAME_controll.ut RAM_GAME_controll.ncd 
+xst -intstyle ise -ifn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.xst" -ofn "D:/Programming/EE2230/Final_Test/RAM_GAME_controll.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc J3_Pin_Test.ucf -p xc6slx16-csg324-3 RAM_GAME_controll.ngc RAM_GAME_controll.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_GAME_controll_map.ncd RAM_GAME_controll.ngd RAM_GAME_controll.pcf 
+par -w -intstyle ise -ol high -mt off RAM_GAME_controll_map.ncd RAM_GAME_controll.ncd RAM_GAME_controll.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RAM_GAME_controll.twx RAM_GAME_controll.ncd -o RAM_GAME_controll.twr RAM_GAME_controll.pcf -ucf J3_Pin_Test.ucf 
+bitgen -intstyle ise -f RAM_GAME_controll.ut RAM_GAME_controll.ncd 
