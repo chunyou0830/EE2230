@@ -29,7 +29,8 @@ module RAM_control (
     reg [95:0] data_in;
     reg [23:0] trans;
     wire [255:0] mark_1, mark_2, mark_3, mark_4;
-    wire [15:0] in_temp0, in_temp1, in_temp2, in_temp3;
+    wire [15:0] in_temp1, in_temp2, in_temp3;
+	 reg [15:0] in_temp0;
     reg [1:0] cnt, cnt_next;  //count mark row
     reg [511:0] mem, mem_next;
     reg [1:0] state, state_next;
@@ -78,7 +79,15 @@ module RAM_control (
         .mark(mark_4)
     );
 
-    assign in_temp0 = mark_1[(240-((addr%16)*16))+:16];
+
+	always @*
+	begin
+	if(cnt == 4'b1)
+	in_temp0 = 16'b1111_1111_1111_1111;
+	else
+	in_temp0 = 16'b0000_0000_0000_0000;
+	end
+    //assign in_temp0 = 16'b1111_1111_1111_1111/*mark_1[(240-((addr%16)*16))+:16]*/;
     assign in_temp1 = mark_2[(240-((addr%16)*16))+:16];
     assign in_temp2 = mark_3[(240-((addr%16)*16))+:16];
     assign in_temp3 = mark_4[(240-((addr%16)*16))+:16];

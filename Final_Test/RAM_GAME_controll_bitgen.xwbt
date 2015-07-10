@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=D:\Programming\EE2230\Final_Test\RAM_GAME_controll.ncd
-OUTFILE=D:\Programming\EE2230\Final_Test\RAM_GAME_controll.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=D:\Programming\EE2230\Final_Test
-LICENSE=WebPack
-USER_INFO=210913348_0_0_143
