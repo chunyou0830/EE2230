@@ -73,6 +73,7 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
+<<<<<<< HEAD
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1434613011" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1434613011">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -188,5 +189,8 @@
       <outfile xil_pn:name="electronic_clock.twx"/>
     </transform>
   </transforms>
+=======
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+>>>>>>> origin/master
 
 </generated_project>

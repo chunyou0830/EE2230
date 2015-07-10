@@ -3,7 +3,11 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
+<<<<<<< HEAD
 ProjectID=229896d6a39c4207b4d07c7c1e50f9cf
+=======
+ProjectID=e2071e0e856f425cb62537e7bd58ed66
+>>>>>>> origin/master
 ProjectIteration=1
 
 WebTalk Summary
@@ -13,4 +17,8 @@ INFO:WebTalk:2 - WebTalk is enabled.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
+<<<<<<< HEAD
 INFO:WebTalk:5 - D:/Programming/EE2230/Lab3_3/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+=======
+INFO:WebTalk:4 - D:/Programming/EE2230/Lab3_3/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2015-06-20T21:54:03.  For additional details about this file, please refer to the WebTalk help file at C:/XilinxISE/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+>>>>>>> origin/master

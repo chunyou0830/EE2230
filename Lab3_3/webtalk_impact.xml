@@ -3,9 +3,15 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="impact" timeStamp="Wed Jul 08 01:40:30 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="4924ae7c91174b2280f5c5027851286c"/>
+=======
+<application name="impact" timeStamp="Sat Jun 20 21:53:56 2015">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="e2071e0e856f425cb62537e7bd58ed66"/>
+>>>>>>> origin/master
 <property name="ProjectIteration" value="1"/>
 </section>
 <section name="iMPACT Project Info" visible="true">

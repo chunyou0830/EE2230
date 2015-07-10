@@ -3,9 +3,15 @@
  <header>
   <ImplementationReportsDirectory>D:/Programming/EE2230/Lab12_1\</ImplementationReportsDirectory>
   <ModuleName>electronic_clock</ModuleName>
+<<<<<<< HEAD
   <DateModified>2015-06-18T20:35:18</DateModified>
   <SavedFilePath>D:/Programming/EE2230/Lab12_1/iseconfig/electronic_clock.xreport</SavedFilePath>
   <DateInitialized>2015-06-18T15:36:44</DateInitialized>
+=======
+  <DateModified>2015-06-19T22:10:35</DateModified>
+  <SavedFilePath>D:/Programming/EE2230/Lab12_1/iseconfig/electronic_clock.xreport</SavedFilePath>
+  <DateInitialized>2015-06-18T19:48:21</DateInitialized>
+>>>>>>> origin/master
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
 </report-views>

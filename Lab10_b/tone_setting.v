@@ -127,7 +127,7 @@ module tone_setting(
 		end
 		else if(pressed && key==`KEY_A)		// L La
 		begin
-			note_data_right = 20'd76628;
+			note_data_right = 20'd19120;//76628;
 			note_disp_right = {`FONT_D, `FONT_O};
 		end
 		else if(pressed && key==`KEY_0)		// L Si
